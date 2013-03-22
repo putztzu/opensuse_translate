@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="generator" content="MediaWiki 1.17.0" />
+<link rel="shortcut icon" href="https://www.opensuse.org/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://en.opensuse.org/opensearch_desc.php" title="openSUSE (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="https://en.opensuse.org/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="openSUSE Atom feed" href="https://en.opensuse.org/index.php?title=Special:RecentChanges&amp;feed=atom" />        <title>SDB:System upgrade - openSUSE</title>
+        <link rel="stylesheet" href="load.php@debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint,shared&amp;only=styles&amp;skin=bentofluid&amp;%252A.css" />
+<link rel="stylesheet" href="https://static.opensuse.org/themes/bento/css/style.fluid.css" media="screen" />
+<link rel="stylesheet" href="extensions/FlaggedRevs/client/flaggedrevs.css@87.css" /><meta name="ResourceLoaderDynamicStyles" content="" /><link rel="stylesheet" href="load.php@debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=bentofluid&amp;%252A.css" />
+<link rel="stylesheet" href="load.php@debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=bentofluid&amp;%252A.css" />
+<link rel="stylesheet" href="load.php@debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=bentofluid&amp;%252A.css" />
+        <link rel="stylesheet" href="skins/bento/css_local/style.css" type="text/css" media="screen" />
+        <!--[if lt IE 7]>
+        <meta http-equiv="imagetoolbar" content="no" />
+        <![endif]-->
+        <script>if ( window.mediaWiki ) {
+	mediaWiki.config.set({"wgCanonicalNamespace": "SDB", "wgCanonicalSpecialPageName": false, "wgNamespaceNumber": 100, "wgPageName": "SDB:System_upgrade", "wgTitle": "System upgrade", "wgAction": "view", "wgArticleId": 3120, "wgIsArticle": true, "wgUserName": null, "wgUserGroups": ["*"], "wgCurRevisionId": 59405, "wgCategories": ["Package management", "SDB:Installation 11.4", "SDB:Installation 12.1", "SDB:Installation 12.2"], "wgBreakFrames": false, "wgRestrictionEdit": [], "wgRestrictionMove": [], "wgWikiEditorEnabledModules": {"toolbar": true, "dialogs": true, "templateEditor": false, "templates": false, "addMediaWizard": false, "preview": true, "previewDialog": false, "publish": false, "toc": false}, "wgFlaggedRevsParams": {"tags": {"accuracy": {"levels": 3, "quality": 2, "pristine": 4}, "depth": {"levels": 3, "quality": 1, "pristine": 4}, "style": {"levels": 3, "quality": 1, "pristine": 4}}}, "wgStableRevisionId": 59405, "wgRevContents": {"error": "Unable to get content.", "waiting": "Waiting for content"}, "sfgRemoveText": "Remove", "sfgAutocompleteOnAllChars": false, "sfgAutocompleteValues": {}, "sfgShowOnSelect": {}, "sfgFormErrorsHeader": "There were errors with your form input; see below", "sfgBlankErrorStr": "cannot be blank", "sfgBadURLErrorStr": "must have the correct URL format, starting with \"http\"", "sfgBadEmailErrorStr": "must have a valid email address format", "sfgBadNumberErrorStr": "must be a valid number", "sfgBadDateErrorStr": "must be a valid date", "sfgAnonEditWarning": "Warning: You are not logged in. Your IP address will be recorded in this page\'s edit history.", "egMapsDebugJS": false});
+}
+</script>        <script type="text/javascript" src="skins/common/wikibits.js@301"><!-- wikibits js --></script>
+        <script type="text/javascript" src="https://static.opensuse.org/stage/themes/bento/js/jquery.js"></script>
+        <script type="text/javascript" src="https://static.opensuse.org/stage/themes/bento/js/script.js"></script>
+        <script type="text/javascript" src="skins/bento/js_local/script.js"></script>
+        <script type="text/javascript" src="skins/bento/js_local/search.js"></script>
+
+        <script type="text/javascript" src="https://static.opensuse.org/themes/bento/js/l10n/global-navigation-data-en.js"></script>
+        <script type="text/javascript" src="https://static.opensuse.org/themes/bento/js/global-navigation.js"></script>
+
+        <link rel="icon" type="image/png" href="https://static.opensuse.org/themes/bento/images/favicon.png" />
+
+        <!-- Head Scripts -->
+                <script src="extensions/FlaggedRevs/client/flaggedrevs.js@87&amp;301"></script>
+<script>
+FlaggedRevs.messages = {"diffToggleShow": "show those changes", "diffToggleHide": "hide those changes", "logToggleShow": "show stability log", "logToggleHide": "hide stability log", "logDetailsShow": "show details", "logDetailsHide": "hide details", "toggleShow": "(+)", "toggleHide": "(-)"};
+</script>
+		<link rel="alternate" type="application/rdf+xml" title="SDB:System upgrade" href="https://en.opensuse.org/index.php?title=Special:ExportRDF/SDB:System_upgrade&amp;xmlmime=rdf" />
+                                                                        
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      (function(){
+        var u=(("https:" == document.location.protocol) ? "https://beans.opensuse.org/piwik/" : "http://beans.opensuse.org/piwik/");
+        _paq.push(['setSiteId', 9]);
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['trackPageView']);
+        _paq.push([ 'setDomains', ["*.opensuse.org"]]);
+        var d=document,
+        g=d.createElement('script'),
+        s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript';
+        g.defer=true;
+        g.async=true;
+        g.src=u+'piwik.js';
+        s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Piwik Code -->
+
+
+    </head>
+
+    <body                                                               class="mediawiki ltr ns-100 ns-subject page-SDB_System_upgrade skin-bentofluid">
+
+        <!-- Start: Header -->
+                  <!-- Start: Header -->
+  <div id="header">
+    <div id="header-content" class="container_12">
+      <a id="header-logo" href="http://www.opensuse.org"><img src="skins/bento/header-logo.png" width="46" height="26" alt="Header Logo" /></a>
+      <ul id="global-navigation">
+        <li id="item-downloads"><a href="https://en.opensuse.org/openSUSE:Browse#Downloads">Downloads</a></li>
+        <li id="item-support"><a href="https://en.opensuse.org/openSUSE:Browse#Support">Support</a></li>
+        <li id="item-community"><a href="https://en.opensuse.org/openSUSE:Browse#Community">Community</a></li>
+        <li id="item-development"><a href="https://en.opensuse.org/openSUSE:Browse#Development">Development</a></li>
+      </ul>
+      <form id="global-search-form" action="https://en.opensuse.org/Special:Search" method="post" accept-charset="utf-8">
+        <label for="search">Search</label>
+        <input type="text" name="search" value="" id="search" />
+        <input type="submit" name="go" class="hidden"  value="Search"  title="Go to a page with this exact name if exists"/>
+      </form>
+    </div>
+  </div>
+  <!-- End: Header -->
+        <!-- End: Header -->
+
+        <div id="subheader" class="container_16">
+            <div id="breadcrump" class="grid_12 alpha">
+                <a href="https://en.opensuse.org/" title="Home"><img src="skins/bento/home_grey.png" width="16" height="16" alt="Home" /> Wiki</a> &gt; <a href="SDB%253ASystem_upgrade.html" title="">SDB:System upgrade</a>
+            </div>
+
+
+                    <div id="login-wrapper" class="grid_4 omega">
+                <a href="https://en.opensuse.org/index.php?title=Special:UserLogin&amp;returnto=SDB:System_upgrade">Sign up</a> | <a id="login-trigger" href="SDB%253ASystem_upgrade.html#login">Login</a>
+
+                <div id="login-form">
+		                        <form action="https://login.attachmategroup.com/nidp/idff/sso?sid=0" method="post" enctype="application/x-www-form-urlencoded" name="login_form">
+                    		    <input name="target" value="http://en.opensuse.org/index.php?title=Special:UserLogin&returnto=SDB:System_upgrade" type="hidden"/>
+                        <input name="context" value="default" type="hidden"/>
+                        <input name="proxypath" value="reverse" type="hidden"/>
+                        <input name="message" value="Please log In" type="hidden"/>
+                        <p><label class="inlined" for="username">Username</label><input type="text" class="inline-text" name="Ecom_User_ID" value="" id="username" /></p>
+                        <p><label class="inlined" for="password">Password</label><input type="password" class="inline-text" name="Ecom_Password" value="" id="password" /></p>
+                        <p><input type="submit" value="Login" /></p>
+                        <p class="slim-footer"><a id="close-login" href="SDB%253ASystem_upgrade.html#cancel">Cancel</a></p>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Start: Main Content Area -->
+        <div id="content" class="container_16 content-wrapper">
+
+            <div class="column grid_3 alpha">
+
+               <!-- Begin custom navigation -->
+                              <div id="some_other_content" class="box box-shadow alpha clear-both navigation">
+               <h2 class="box-header">
+                  Navigation               </h2>
+                 <ul class="navigation">
+                                    <li><a href="https://en.opensuse.org/Portal:Project">Project</a></li>
+                                    <li><a href="https://en.opensuse.org/Portal:Distribution">Distribution</a></li>
+                                    <li><a href="https://en.opensuse.org/Portal:Support">Support</a></li>
+                                    <li><a href="https://en.opensuse.org/openSUSE:Communication_channels">Contact</a></li>
+                                    <li><a href="https://en.opensuse.org/openSUSE:Category_browse">Site map</a></li>
+                                   </ul>          
+               </div>
+                              <div id="some_other_content" class="box box-shadow alpha clear-both navigation">
+               <h2 class="box-header">
+                  Help               </h2>
+                 <ul class="navigation">
+                                    <li><a href="https://en.opensuse.org/Portal:Wiki">Wiki</a></li>
+                                    <li><a href="https://en.opensuse.org/Help:Concept">Create a Page</a></li>
+                                    <li><a href="https://en.opensuse.org/Help:Editing">Change a Page</a></li>
+                                    <li><a href="https://en.opensuse.org/Help:Search">Find a Page</a></li>
+                                   </ul>          
+               </div>
+               
+
+                <div id="some_other_content" class="box box-shadow alpha clear-both navigation">
+                    <h2 class="box-header">Toolbox</h2>
+                    <ul class="navigation">
+                                <li id="t-whatlinkshere"><a href="https://en.opensuse.org/Special:WhatLinksHere/SDB:System_upgrade" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+                                    <li id="t-recentchangeslinked"><a href="https://en.opensuse.org/Special:RecentChangesLinked/SDB:System_upgrade" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+                
+                                                                                                <li id="t-specialpages"><a href="https://en.opensuse.org/Special:SpecialPages">Special pages</a></li>
+                                    </ul>
+                </div>
+
+                <div id="some_other_content" class="box box-shadow alpha clear-both navigation">
+                    <h2 class="box-header">Sponsors</h2>
+                                        <a class="sponsor-image" href="https://en.opensuse.org/Sponsors"><img src="https://static.opensuse.org/themes/bento/images/sponsors/sponsor_b1-systems.png" alt="Sponsor" style="max-width: 145px;"/></a>
+                </div>
+
+
+                        <div id="language_box" class="box box-shadow alpha clear-both navigation">
+                    <h2 class="box-header">In other languages</h2>
+                    <ul class="navigation">
+                                    <li><a href='http://de.opensuse.org/SDB:Distribution-Upgrade'>Deutsch</a></li>
+                                                        <li><a href='http://es.opensuse.org/SDB:Actualizaci%C3%B3n_de_la_distribuci%C3%B3n'>Español</a></li>
+                                                        <li><a href='http://fr.opensuse.org/SDB:System_upgrade'>Français</a></li>
+                                                        <li><a href='http://it.opensuse.org/SDB:System_upgrade'>Italiano</a></li>
+                                                        <li><a href='http://ja.opensuse.org/Upgrade/Supported'>日本語</a></li>
+                                                        <li><a href='http://nl.opensuse.org/SDB:Upgrade'>Nederlands</a></li>
+                                                        <li><a href='http://ru.opensuse.org/SDB:%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B'>Русский</a></li>
+                                                        <li><a href='http://zh.opensuse.org/SDB:%E7%B3%BB%E7%BB%9F%E5%8D%87%E7%BA%A7'>中文</a></li>
+                                                        <li><a href='http://zh-tw.opensuse.org/SDB:%E7%B3%BB%E7%B5%B1%E5%8D%87%E7%B4%9A'>‪中文(台灣)‬</a></li>
+                                                    </ul>
+                </div>
+            
+
+            </div>
+
+
+                        
+
+            <div id="some-content" class="box box-shadow grid_13 clearfix">
+                <!-- box header -->
+                <div class="box-header header-tabs">
+                    <ul>
+                                <li><a href="SDB%253ASystem_upgrade.html" class="selected">SDB</a></li><li><a href="https://en.opensuse.org/SDB_Talk:System_upgrade" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li><li><a href="https://en.opensuse.org/index.php?title=SDB:System_upgrade&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li><a href="https://en.opensuse.org/index.php?title=SDB:System_upgrade&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                    </ul>
+                </div>
+                <div id="contentSub"><div id="mw-fr-revisiontag" class="flaggedrevs_short plainlinks noprint" onMouseOut="FlaggedRevs.onBoxMouseOut(event)"><div class="flaggedrevs_short_basic"><img class="flaggedrevs-icon" src="extensions/FlaggedRevs/client/img/2.png" alt="This is a checked version of this page" title="This is a checked version of this page" /><img id="mw-fr-revisiontoggle" class="fr-toggle-arrow" src="extensions/FlaggedRevs/client/img/arrow-down.png" style="display:none;" onMouseOver="FlaggedRevs.onBoxMouseOver()" alt="show/hide details" /></div>
+<div id="mw-fr-revisiondetails-wrapper" style="position:relative;"><div id="mw-fr-revisiondetails" class="flaggedrevs_short_details" style="display:none">This is the <a href="https://en.opensuse.org/Help:Page_validation" title="Help:Page validation">stable version</a>, <a href="https://en.opensuse.org/index.php?title=Special:Log&amp;type=review&amp;page=SDB:System_upgrade" class="external text" rel="nofollow">checked</a> on <i>18 March 2013</i>.<p><table id='mw-fr-revisionratings-box' align='center' class='flaggedrevs-color-1' cellpadding='0'><tr><td class='fr-text' valign='middle'>Accuracy</td><td class='fr-value40' valign='middle'>Sighted</td></tr>
+<tr><td class='fr-text' valign='middle'>Depth</td><td class='fr-value40' valign='middle'>Basic</td></tr>
+<tr><td class='fr-text' valign='middle'>Readability</td><td class='fr-value40' valign='middle'>Acceptable</td></tr>
+</table></p></div>
+</div>
+</div>
+</div>
+                <!-- End: box header -->
+
+
+                <a name="top" id="top"></a>
+
+                <div class="alpha omega">
+                    <h1>SDB:System upgrade</h1>
+
+                    <h3 id="siteSub">tagline: From openSUSE</h3>
+                    <!-- <div id="contentSub"><div id="mw-fr-revisiontag" class="flaggedrevs_short plainlinks noprint" onMouseOut="FlaggedRevs.onBoxMouseOut(event)"><div class="flaggedrevs_short_basic"><img class="flaggedrevs-icon" src="/extensions/FlaggedRevs/client/img/2.png" alt="This is a checked version of this page" title="This is a checked version of this page" /><img id="mw-fr-revisiontoggle" class="fr-toggle-arrow" src="/extensions/FlaggedRevs/client/img/arrow-down.png" style="display:none;" onMouseOver="FlaggedRevs.onBoxMouseOver()" alt="show/hide details" /></div>
+<div id="mw-fr-revisiondetails-wrapper" style="position:relative;"><div id="mw-fr-revisiondetails" class="flaggedrevs_short_details" style="display:none">This is the <a href="/Help:Page_validation" title="Help:Page validation">stable version</a>, <a href="https://en.opensuse.org/index.php?title=Special:Log&amp;type=review&amp;page=SDB:System_upgrade" class="external text" rel="nofollow">checked</a> on <i>18 March 2013</i>.<p><table id='mw-fr-revisionratings-box' align='center' class='flaggedrevs-color-1' cellpadding='0'><tr><td class='fr-text' valign='middle'>Accuracy</td><td class='fr-value40' valign='middle'>Sighted</td></tr>
+<tr><td class='fr-text' valign='middle'>Depth</td><td class='fr-value40' valign='middle'>Basic</td></tr>
+<tr><td class='fr-text' valign='middle'>Readability</td><td class='fr-value40' valign='middle'>Acceptable</td></tr>
+</table></p></div>
+</div>
+</div>
+</div> -->
+                                    
+                    <!-- Begin Content Area -->
+                            <div class="box" style="margin:0 0 1em 1em;width:97%;"><div class="box-header" style="text-indent:.5em;font-size:120%;"><b><a href="https://en.opensuse.org/Portal:Documentation" title="Portal:Documentation">Documentation</a> &gt; <a href="https://en.opensuse.org/SDB:How_to_migrate_to_a_new_openSUSE_version" title="SDB:How to migrate to a new openSUSE version">How to migrate to a new openSUSE version</a></b></div><div style="margin:0 0 0 0;padding:0 .5em 0 .5em;"><strong class="selflink">System upgrade</strong> - <a href="https://en.opensuse.org/SDB:Installation_help" title="SDB:Installation help">Installation help</a> - <a href="https://en.opensuse.org/SDB:How_to_migrate_from_Windows" title="SDB:How to migrate from Windows">How to migrate from Windows</a></div></div>
+<div class="intro-wrapper"><div class="intro">This guide shows how to use <a href="https://en.opensuse.org/Portal:Zypper" title="Portal:Zypper">Zypper</a> to do a live distribution upgrade of openSUSE. 
+</div></div>
+<table class="knowledge">
+
+<tr>
+<td colspan="2" class="knowledge-section"><b>Tested on openSUSE</b>
+</td>
+<td colspan="2" class="knowledge-section"><b>Recommended articles</b>
+</td>
+<td colspan="2" class="knowledge-section"><b>Related articles</b>
+</td></tr>
+<tr>
+<td class="knowledge-icon"><a href="https://en.opensuse.org/index.php?title=File:Icon-checked.png&amp;filetimestamp=20100616140252" class="image"><img alt="Icon-checked.png" src="images/thumb/4/4f/Icon-checked.png/32px-Icon-checked.png" width="32" height="32" /></a>
+</td>
+<td class="knowledge-icon-text">
+<ul><li><a href="https://en.opensuse.org/Portal:12.3" title="Portal:12.3">12.3</a>
+</li><li><a href="https://en.opensuse.org/Portal:12.2" title="Portal:12.2">12.2</a>
+</li><li><a href="https://en.opensuse.org/Portal:12.1" title="Portal:12.1">12.1</a>
+</li><li><a href="https://en.opensuse.org/Portal:11.4" title="Portal:11.4">11.4</a>
+</li><li><a href="https://en.opensuse.org/Portal:11.3" title="Portal:11.3">11.3</a>
+</li><li><a href="https://en.opensuse.org/Portal:11.2" title="Portal:11.2">11.2</a>
+</li></ul>
+<p>
+</p>
+</td>
+<td class="knowledge-icon"><a href="https://en.opensuse.org/index.php?title=File:Icon-manual.png&amp;filetimestamp=20100615131647" class="image"><img alt="Icon-manual.png" src="images/thumb/e/ed/Icon-manual.png/32px-Icon-manual.png" width="32" height="32" /></a>
+</td>
+<td class="knowledge-icon-text">
+<ul><li><a href="https://en.opensuse.org/SDB:Zypper_usage" title="SDB:Zypper usage" class="mw-redirect">Zypper usage</a>
+</li><li><a href="https://en.opensuse.org/YaST_Online_Update" title="YaST Online Update">YaST Online Update</a>
+</li></ul>
+</td>
+<td class="knowledge-icon"><a href="https://en.opensuse.org/index.php?title=File:Icon-help.png&amp;filetimestamp=20100616184852" class="image"><img alt="Icon-help.png" src="images/thumb/8/87/Icon-help.png/32px-Icon-help.png" width="32" height="32" /></a>
+</td>
+<td class="knowledge-icon-text">
+<ul><li><a href="https://en.opensuse.org/YaST_Software_Management" title="YaST Software Management">YaST Software Management</a>
+</li></ul>
+</td></tr></table>
+<div style="background:#fefefe; padding:0 1em 0 1.1em;margin: .5em 0 .5em 0;">
+<div style="border-left:.5em solid #669900;padding:.2em .5em .4em 1em;"><span style="font-weight: bold; color:#669900; padding:.2em .5em .4em 0em;"><u>Version:</u> 11.2+</span><span style="padding:.2em .5em .4em 0em;">Starting with openSUSE 11.2, a live upgrade from the prior version is <a href="https://features.opensuse.org/305634" class="external text" rel="nofollow">officially supported</a>. This allows to perform a complete operating system upgrade in place, without reloading everything from scratch. </span>
+</div></div>
+<hr />
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="SDB%253ASystem_upgrade.html#Summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="SDB%253ASystem_upgrade.html#Supported_scenarios"><span class="tocnumber">2</span> <span class="toctext">Supported scenarios</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="SDB%253ASystem_upgrade.html#Making_sure_you_are_up_to_date"><span class="tocnumber">3</span> <span class="toctext">Making sure you are up to date</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="SDB%253ASystem_upgrade.html#Command_line"><span class="tocnumber">3.1</span> <span class="toctext">Command line</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="SDB%253ASystem_upgrade.html#1._Check_if_the_update_repository_already_exists_and_is_enabled."><span class="tocnumber">3.1.1</span> <span class="toctext">1. Check if the update repository already exists and is enabled.</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="SDB%253ASystem_upgrade.html#2._Add_update-repository."><span class="tocnumber">3.1.2</span> <span class="toctext">2. Add update-repository.</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="SDB%253ASystem_upgrade.html#3._Update_system_to_the_latest_packages."><span class="tocnumber">3.1.3</span> <span class="toctext">3. Update system to the latest packages.</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-8"><a href="SDB%253ASystem_upgrade.html#Graphical_tool"><span class="tocnumber">3.2</span> <span class="toctext">Graphical tool</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="SDB%253ASystem_upgrade.html#Running_the_Upgrade"><span class="tocnumber">4</span> <span class="toctext">Running the Upgrade</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="SDB%253ASystem_upgrade.html#Command_line_2"><span class="tocnumber">4.1</span> <span class="toctext">Command line</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="SDB%253ASystem_upgrade.html#Links_to_other_openSUSE_or_SUSE_projects"><span class="tocnumber">5</span> <span class="toctext">Links to other openSUSE or SUSE projects</span></a>
+<ul>
+<li class="toclevel-2 tocsection-12"><a href="SDB%253ASystem_upgrade.html#The_openSUSE_Forums"><span class="tocnumber">5.1</span> <span class="toctext">The openSUSE Forums</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h2><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:System_upgrade&amp;action=edit&amp;section=1" title="Edit section: Summary">edit</a>]</span> <span class="mw-headline" id="Summary">Summary</span></h2>
+<p>This page explains how to run a tool or a series of command line steps to upgrade your system to the latest version of openSUSE.
+</p><p>Doing a live-upgrade has advantages but on the flip-side, there are major disadvantages.
+</p><p>Among the advantages are:
+</p>
+<ul><li> You only download the packages that need to be upgraded, thus using a lot less bandwidth. 
+</li><li> During the upgrade you can still use your workstation (even if this is not recommended); the only downtime will be the reboot after the upgrade.
+</li><li> You do not have to use a DVD, nor do you need a DVD writer. (You also could boot from the net or a USB key, and install the rest from the net...)
+</li></ul>
+<p>The disadvantages:
+</p>
+<ul><li> If for any reason the upgrade is interrupted (e.g: power outages, network disconnect) and the process can't continue, you could be left with a broken system (that depends on where the process stopped of course).
+</li><li> If you have multiple systems to upgrade, you use bandwidth each time, so it might be better to download an ISO image.
+</li></ul>
+<p>Other possibility:
+Offline upgrade, aka traditional or DVD upgrade. For more information, read <a href="https://en.opensuse.org/SDB:Offline_upgrade" title="SDB:Offline upgrade">offline upgrade</a>.
+</p>
+<hr />
+<h2><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:System_upgrade&amp;action=edit&amp;section=2" title="Edit section: Supported scenarios">edit</a>]</span> <span class="mw-headline" id="Supported_scenarios">Supported scenarios</span></h2>
+<p>Be aware that in principle, this upgrade process is considered “best effort” only. This means that due to some third-party packages and the myriad of possible configurations, it is possible for some combinations to cause failure upon upgrade.
+</p><p>It is very important that all important data is backed up prior to beginning the upgrade process.
+</p>
+<hr />
+<h2><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:System_upgrade&amp;action=edit&amp;section=3" title="Edit section: Making sure you are up to date">edit</a>]</span> <span class="mw-headline" id="Making_sure_you_are_up_to_date">Making sure you are up to date</span></h2>
+<p>The <b>supported</b> starting point is the last openSUSE release with all current updates applied. This does not include arbitrary openSUSE Build Service repositories you may have added.  We recommend that you disable all OBS repositories first, perform the upgrade, then reenable them.  The following steps show you how to update your openSUSE distribution to the current packages before upgrading to the next version.
+</p>
+<h3><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:System_upgrade&amp;action=edit&amp;section=4" title="Edit section: Command line">edit</a>]</span> <span class="mw-headline" id="Command_line">Command line</span></h3>
+<h4><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:System_upgrade&amp;action=edit&amp;section=5" title="Edit section: 1. Check if the update repository already exists and is enabled.">edit</a>]</span> <span class="mw-headline" id="1._Check_if_the_update_repository_already_exists_and_is_enabled."><b>1.</b> Check if the update repository already exists and is enabled.</span></h4>
+<div class="shell">zypper repos --uri</div>
+<p>Check if <tt><a href="http://download.opensuse.org/update/12.2/" class="external free" rel="nofollow">http://download.opensuse.org/update/12.2/</a></tt> (replace 12.2 with your version) exists in one of the <i>URI</i> column values, and <b>Yes</b> in column <i>Enabled</i>, like the example below,
+</p>
+<pre>#  | Alias           | Name            | Enabled | Refresh | URI
+---+-----------------+-----------------+---------+---------+---------------------------------------
+1  | repo-update     | repo-update     | Yes     | Yes     | <a href="http://download.opensuse.org/update/12.2/" class="external free" rel="nofollow">http://download.opensuse.org/update/12.2/</a>
+</pre>
+<p>If column <i>Enabled</i> says <i>No</i>, enable it by issuing this command,
+</p>
+<div class="shell">zypper modifyrepo --enable repo-update</div>
+<dl><dd> where ‘repo-update’ is the name of the update repository.
+</dd><dd> If it exists and has been enabled, continue to step 3.
+</dd></dl>
+<h4><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:System_upgrade&amp;action=edit&amp;section=6" title="Edit section: 2. Add update-repository.">edit</a>]</span> <span class="mw-headline" id="2._Add_update-repository."><b>2.</b> Add update-repository.</span></h4>
+<div class="shell">zypper addrepo --check --refresh --name 'openSUSE-12.2-Update' <a href="http://download.opensuse.org/update/12.2/" class="external free" rel="nofollow">http://download.opensuse.org/update/12.2/</a> repo-update</div>
+<dl><dd> Replace 12.2 above with your current openSUSE version
+</dd></dl>
+<h4><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:System_upgrade&amp;action=edit&amp;section=7" title="Edit section: 3. Update system to the latest packages.">edit</a>]</span> <span class="mw-headline" id="3._Update_system_to_the_latest_packages."><b>3.</b> Update system to the latest packages.</span></h4>
+<div class="shell">zypper refresh</div>
+<div class="shell">zypper update</div>
+<p>For more information, read <a href="https://en.opensuse.org/SDB:Zypper_usage" title="SDB:Zypper usage" class="mw-redirect">Zypper Usage</a>.
+</p>
+<h3><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:System_upgrade&amp;action=edit&amp;section=8" title="Edit section: Graphical tool">edit</a>]</span> <span class="mw-headline" id="Graphical_tool">Graphical tool</span></h3>
+<p>See <a href="https://en.opensuse.org/YaST_Online_Update" title="YaST Online Update">YaST Online Update</a>.
+</p>
+<hr />
+<h2><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:System_upgrade&amp;action=edit&amp;section=9" title="Edit section: Running the Upgrade">edit</a>]</span> <span class="mw-headline" id="Running_the_Upgrade">Running the Upgrade</span></h2>
+<p>The following steps will show you how to upgrade your openSUSE distribution to the following release (eg. 12.2 -&gt; 12.3). As already mentioned, any third party or OBS repositories can cause troubles, so it is recommended to disable or remove them before proceeding.
+</p>
+<h3><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:System_upgrade&amp;action=edit&amp;section=10" title="Edit section: Command line">edit</a>]</span> <span class="mw-headline" id="Command_line_2">Command line</span></h3>
+<p>As an example, we will be showing upgrade from 12.2 to 12.3 here:
+</p>
+<ul><li> Take a look at all repos you have
+</li></ul>
+<div class="shell">zypper lr</div>
+<dl><dd> and remove all third party/OBS repos you no longer need
+</dd></dl>
+<div class="shell">zypper rr &lt;alias&gt;</div>
+<ul><li> Change all remaining repo URLs to the new version of the distribution (needs to be run as root)
+</li></ul>
+<div class="shell">sed -i 's/12.2/12.3/g' /etc/zypp/repos.d/*</div>
+<ul><li> If you are upgrading from 12.1 or older, add non-oss-update repo
+</li></ul>
+<div class="shell">zypper ar -f <a href="http://download.opensuse.org/update/12.3-non-oss/" class="external free" rel="nofollow">http://download.opensuse.org/update/12.3-non-oss/</a> repo-update-non-oss</div>
+<ul><li> Refresh new repositories (you might be asked to accept new gpg key)
+</li></ul>
+<div class="shell">zypper ref</div>
+<dl><dd> If you haven't removed third party/OBS repositories you may encounter some errors as these repositories may not exist yet or they may have different unguessable URL. It is always recommended to remove them and add their newer version after upgrade.
+</dd></dl>
+<ul><li> Now execute the full distribution upgrade. It is strongly recommended that you run this inside <a href="http://www.gnu.org/software/screen/" class="external text" rel="nofollow">GNU screen</a> or <a href="http://tmux.sourceforge.net/" class="external text" rel="nofollow">tmux</a> to protect the upgrade process in case anything should go wrong with the X session during the upgrade. Packages for both screen and tmux are available in the main openSUSE repositories.  tmux is probably a safer bet, because for example if upgrading from 12.1 to 12.2, you would go from a version of GNU screen which uses FIFO pipes to a version which uses UNIX sockets, and <a href="http://savannah.gnu.org/bugs/?32471" class="external text" rel="nofollow">GNU screen has a bug which breaks compatibility between these two approaches</a>, which means that you cannot resume a screen session created in 12.1 using the version of screen from 12.2.
+</li></ul>
+<div class="shell">zypper dup</div>
+<dl><dd> With the above command zypper will download all required packages and install them in heaps. To download all packages in advance, use: 
+</dd></dl>
+<div class="shell">zypper dup --download "in-advance"</div>
+<div class="info-wrapper">
+<div class="info"><p>
+If you did the above dist upgrade before the official release date (eg. 2013-03-13 for 12.3), you may have installed a Release Candidate (RC) or milestone version and will need to repeat the final <code>zypper dup</code> step now to receive the final release.</p></div></div>
+<ul><li> Search for updated openSUSE 12.3 compatible third-party repositories that you used before if you still need them and add them.
+</li></ul>
+<dl><dd> <b>Warning</b>: Use with caution. Using third-party repositories may break your system or cause instabilities.
+</dd></dl>
+<div class="shell">zypper addrepo --name &lt;name&gt; &lt;url&gt; &lt;alias&gt;</div>
+<p>Or, if you have URL of a .repo file:
+</p>
+<div class="shell">zypper ar &lt;url.repo&gt;</div>
+<ul><li> After upgrade, reboot is recommended to start new kernel and newer versions of everything.
+</li></ul>
+<div class="info-wrapper">
+<div class="info"><p>In addition, <code>zypper up</code> can be run from time to time to ensure you have the latest available packages from the various repositories that you have enabled.  YOU (Yast Online Update) only addresses security updates from the official repositories.
+</p></div></div>
+<p><br />
+</p>
+<h2><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:System_upgrade&amp;action=edit&amp;section=11" title="Edit section: Links to other openSUSE or SUSE projects">edit</a>]</span> <span class="mw-headline" id="Links_to_other_openSUSE_or_SUSE_projects"> Links to other openSUSE or SUSE projects </span></h2>
+<h3><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:System_upgrade&amp;action=edit&amp;section=12" title="Edit section: The openSUSE Forums">edit</a>]</span> <span class="mw-headline" id="The_openSUSE_Forums">The openSUSE Forums</span></h3>
+<ul><li> Threads tagged with <a href="http://forums.opensuse.org/tags/zypper%20dup.html" class="external text" rel="nofollow">zypper dup</a> or <a href="http://forums.opensuse.org/tags/upgrade.html" class="external text" rel="nofollow">upgrade</a>
+</li></ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 127/1000000
+Post-expand include size: 3019/2097152 bytes
+Template argument size: 1369/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in stable version parser cache with key opensuse_en:stable-pcache:idhash:3120-0!1!0!!en!2 and timestamp 20130320001900 --><div class="printfooter">
+Retrieved from "<a href="SDB%253ASystem_upgrade.html">https://en.opensuse.org/SDB:System_upgrade</a>"</div>
+
+        <div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="https://en.opensuse.org/Special:Categories" title="Special:Categories">Categories</a>: <span dir='ltr'><a href="https://en.opensuse.org/Category:Package_management" title="Category:Package management">Package management</a></span> | <span dir='ltr'><a href="https://en.opensuse.org/Category:SDB:Installation_11.4" title="Category:SDB:Installation 11.4">SDB:Installation 11.4</a></span> | <span dir='ltr'><a href="https://en.opensuse.org/index.php?title=Category:SDB:Installation_12.1&amp;action=edit&amp;redlink=1" class="new" title="Category:SDB:Installation 12.1 (page does not exist)">SDB:Installation 12.1</a></span> | <span dir='ltr'><a href="https://en.opensuse.org/index.php?title=Category:SDB:Installation_12.2&amp;action=edit&amp;redlink=1" class="new" title="Category:SDB:Installation 12.2 (page does not exist)">SDB:Installation 12.2</a></span></div></div>                            <!-- End Content Area -->
+
+                </div>
+                <br/>
+
+                <div class="box-footer header-tabs">
+                    <ul>
+                                <li><a href="SDB%253ASystem_upgrade.html" class="selected">SDB</a></li><li><a href="https://en.opensuse.org/SDB_Talk:System_upgrade" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li><li><a href="https://en.opensuse.org/index.php?title=SDB:System_upgrade&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li><a href="https://en.opensuse.org/index.php?title=SDB:System_upgrade&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                    </ul>
+                </div>
+
+            </div></div>
+
+        <!-- Note: this clears floating, set in previous elements -->
+        <div class="clear"></div>
+
+
+        <!-- Start: Footer -->
+                <!-- Start: included footer part -->
+<div id="footer" class="container_12">
+    <div id="footer-legal" class="border-top grid_12">
+        <p>This page has been accessed 346,882 times.</p><p>
+            &copy; 2011 Novell, Inc. and others.  All content  is made available under the terms
+            of the GNU Free Documentation License version 1.2 ("GFDL") unless expressly
+            otherwise indicated. | <a href="https://en.opensuse.org/Terms_of_site">Terms of site</a>
+        </p>
+    </div>
+</div>
+
+<!-- End: included footer part -->
+        <!-- End: Footer -->
+
+        
+<script src="load.php@debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=bentofluid&amp;%252A"></script>
+<script>if ( window.mediaWiki ) {
+	mediaWiki.config.set({"wgCanonicalNamespace": "SDB", "wgCanonicalSpecialPageName": false, "wgNamespaceNumber": 100, "wgPageName": "SDB:System_upgrade", "wgTitle": "System upgrade", "wgAction": "view", "wgArticleId": 3120, "wgIsArticle": true, "wgUserName": null, "wgUserGroups": ["*"], "wgCurRevisionId": 59405, "wgCategories": ["Package management", "SDB:Installation 11.4", "SDB:Installation 12.1", "SDB:Installation 12.2"], "wgBreakFrames": false, "wgRestrictionEdit": [], "wgRestrictionMove": [], "wgWikiEditorEnabledModules": {"toolbar": true, "dialogs": true, "templateEditor": false, "templates": false, "addMediaWizard": false, "preview": true, "previewDialog": false, "publish": false, "toc": false}, "wgFlaggedRevsParams": {"tags": {"accuracy": {"levels": 3, "quality": 2, "pristine": 4}, "depth": {"levels": 3, "quality": 1, "pristine": 4}, "style": {"levels": 3, "quality": 1, "pristine": 4}}}, "wgStableRevisionId": 59405, "wgRevContents": {"error": "Unable to get content.", "waiting": "Waiting for content"}, "sfgRemoveText": "Remove", "sfgAutocompleteOnAllChars": false, "sfgAutocompleteValues": {}, "sfgShowOnSelect": {}, "sfgFormErrorsHeader": "There were errors with your form input; see below", "sfgBlankErrorStr": "cannot be blank", "sfgBadURLErrorStr": "must have the correct URL format, starting with \"http\"", "sfgBadEmailErrorStr": "must have a valid email address format", "sfgBadNumberErrorStr": "must be a valid number", "sfgBadDateErrorStr": "must be a valid date", "sfgAnonEditWarning": "Warning: You are not logged in. Your IP address will be recorded in this page\'s edit history.", "egMapsDebugJS": false});
+}
+</script>
+<script>if ( window.mediaWiki ) {
+	mediaWiki.loader.load(["mediawiki.util", "mediawiki.legacy.wikibits", "mediawiki.legacy.ajax"]);
+	mediaWiki.loader.go();
+}
+</script>
+
+<script src="extensions/FlaggedRevs/client/flaggedrevs.js@87&amp;301"></script>
+<script>
+FlaggedRevs.messages = {"diffToggleShow": "show those changes", "diffToggleHide": "hide those changes", "logToggleShow": "show stability log", "logToggleHide": "hide stability log", "logDetailsShow": "show details", "logDetailsHide": "hide details", "toggleShow": "(+)", "toggleHide": "(-)"};
+</script>
+<script src="load.php@debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=bentofluid&amp;%252A"></script>
+<script>if ( window.mediaWiki ) {
+	mediaWiki.user.options.set({"ccmeonemails":0,"cols":80,"contextchars":50,"contextlines":5,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"bentofluid","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+	"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"wikieditor-preview":1,"flaggedrevssimpleui":1,"flaggedrevsstable":false,"flaggedrevseditdiffs":true,"flaggedrevsviewdiffs":false,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"searchNs101":false,"searchNs102":true,"searchNs103":false,"searchNs104":false,"searchNs105":false,"searchNs106":false,"searchNs107":false,"searchNs110":false,"searchNs111":false,"searchNs122":false,"searchNs123":false,"searchNs126":false,"searchNs127":false,"searchNs128":false,"searchNs129":false,
+	"searchNs420":false,"searchNs421":false});;mediaWiki.loader.state({"user.options":"ready"});
+}
+</script>        <!-- Served in 0.126 secs. -->
+    </body>
+</html>
+        

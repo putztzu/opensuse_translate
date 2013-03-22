@@ -1,0 +1,441 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="generator" content="MediaWiki 1.17.0" />
+<link rel="shortcut icon" href="https://www.opensuse.org/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://en.opensuse.org/opensearch_desc.php" title="openSUSE (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="https://en.opensuse.org/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="openSUSE Atom feed" href="https://en.opensuse.org/index.php?title=Special:RecentChanges&amp;feed=atom" />        <title>SDB:DevStack - openSUSE</title>
+        <link rel="stylesheet" href="load.php@debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint,shared&amp;only=styles&amp;skin=bentofluid&amp;%252A.css" />
+<link rel="stylesheet" href="https://static.opensuse.org/themes/bento/css/style.fluid.css" media="screen" />
+<link rel="stylesheet" href="extensions/FlaggedRevs/client/flaggedrevs.css@87.css" /><meta name="ResourceLoaderDynamicStyles" content="" /><link rel="stylesheet" href="load.php@debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=bentofluid&amp;%252A.css" />
+<link rel="stylesheet" href="load.php@debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=bentofluid&amp;%252A.css" />
+<link rel="stylesheet" href="load.php@debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=bentofluid&amp;%252A.css" />
+        <link rel="stylesheet" href="skins/bento/css_local/style.css" type="text/css" media="screen" />
+        <!--[if lt IE 7]>
+        <meta http-equiv="imagetoolbar" content="no" />
+        <![endif]-->
+        <script>if ( window.mediaWiki ) {
+	mediaWiki.config.set({"wgCanonicalNamespace": "SDB", "wgCanonicalSpecialPageName": false, "wgNamespaceNumber": 100, "wgPageName": "SDB:DevStack", "wgTitle": "DevStack", "wgAction": "view", "wgArticleId": 9239, "wgIsArticle": true, "wgUserName": null, "wgUserGroups": ["*"], "wgCurRevisionId": 58172, "wgCategories": ["SDB:HOWTOs", "Cloud", "OpenStack"], "wgBreakFrames": false, "wgRestrictionEdit": [], "wgRestrictionMove": [], "wgWikiEditorEnabledModules": {"toolbar": true, "dialogs": true, "templateEditor": false, "templates": false, "addMediaWizard": false, "preview": true, "previewDialog": false, "publish": false, "toc": false}, "wgFlaggedRevsParams": {"tags": {"accuracy": {"levels": 3, "quality": 2, "pristine": 4}, "depth": {"levels": 3, "quality": 1, "pristine": 4}, "style": {"levels": 3, "quality": 1, "pristine": 4}}}, "wgStableRevisionId": 58172, "wgRevContents": {"error": "Unable to get content.", "waiting": "Waiting for content"}, "sfgRemoveText": "Remove", "sfgAutocompleteOnAllChars": false, "sfgAutocompleteValues": {}, "sfgShowOnSelect": {}, "sfgFormErrorsHeader": "There were errors with your form input; see below", "sfgBlankErrorStr": "cannot be blank", "sfgBadURLErrorStr": "must have the correct URL format, starting with \"http\"", "sfgBadEmailErrorStr": "must have a valid email address format", "sfgBadNumberErrorStr": "must be a valid number", "sfgBadDateErrorStr": "must be a valid date", "sfgAnonEditWarning": "Warning: You are not logged in. Your IP address will be recorded in this page\'s edit history.", "egMapsDebugJS": false});
+}
+</script>        <script type="text/javascript" src="skins/common/wikibits.js@301"><!-- wikibits js --></script>
+        <script type="text/javascript" src="https://static.opensuse.org/stage/themes/bento/js/jquery.js"></script>
+        <script type="text/javascript" src="https://static.opensuse.org/stage/themes/bento/js/script.js"></script>
+        <script type="text/javascript" src="skins/bento/js_local/script.js"></script>
+        <script type="text/javascript" src="skins/bento/js_local/search.js"></script>
+
+        <script type="text/javascript" src="https://static.opensuse.org/themes/bento/js/l10n/global-navigation-data-en.js"></script>
+        <script type="text/javascript" src="https://static.opensuse.org/themes/bento/js/global-navigation.js"></script>
+
+        <link rel="icon" type="image/png" href="https://static.opensuse.org/themes/bento/images/favicon.png" />
+
+        <!-- Head Scripts -->
+                <script src="extensions/FlaggedRevs/client/flaggedrevs.js@87&amp;301"></script>
+<script>
+FlaggedRevs.messages = {"diffToggleShow": "show those changes", "diffToggleHide": "hide those changes", "logToggleShow": "show stability log", "logToggleHide": "hide stability log", "logDetailsShow": "show details", "logDetailsHide": "hide details", "toggleShow": "(+)", "toggleHide": "(-)"};
+</script>
+		<link rel="alternate" type="application/rdf+xml" title="SDB:DevStack" href="https://en.opensuse.org/index.php?title=Special:ExportRDF/SDB:DevStack&amp;xmlmime=rdf" />
+                                                                        
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      (function(){
+        var u=(("https:" == document.location.protocol) ? "https://beans.opensuse.org/piwik/" : "http://beans.opensuse.org/piwik/");
+        _paq.push(['setSiteId', 9]);
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['trackPageView']);
+        _paq.push([ 'setDomains', ["*.opensuse.org"]]);
+        var d=document,
+        g=d.createElement('script'),
+        s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript';
+        g.defer=true;
+        g.async=true;
+        g.src=u+'piwik.js';
+        s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Piwik Code -->
+
+
+    </head>
+
+    <body                                                               class="mediawiki ltr ns-100 ns-subject page-SDB_DevStack skin-bentofluid">
+
+        <!-- Start: Header -->
+                  <!-- Start: Header -->
+  <div id="header">
+    <div id="header-content" class="container_12">
+      <a id="header-logo" href="http://www.opensuse.org"><img src="skins/bento/header-logo.png" width="46" height="26" alt="Header Logo" /></a>
+      <ul id="global-navigation">
+        <li id="item-downloads"><a href="https://en.opensuse.org/openSUSE:Browse#Downloads">Downloads</a></li>
+        <li id="item-support"><a href="https://en.opensuse.org/openSUSE:Browse#Support">Support</a></li>
+        <li id="item-community"><a href="https://en.opensuse.org/openSUSE:Browse#Community">Community</a></li>
+        <li id="item-development"><a href="https://en.opensuse.org/openSUSE:Browse#Development">Development</a></li>
+      </ul>
+      <form id="global-search-form" action="https://en.opensuse.org/Special:Search" method="post" accept-charset="utf-8">
+        <label for="search">Search</label>
+        <input type="text" name="search" value="" id="search" />
+        <input type="submit" name="go" class="hidden"  value="Search"  title="Go to a page with this exact name if exists"/>
+      </form>
+    </div>
+  </div>
+  <!-- End: Header -->
+        <!-- End: Header -->
+
+        <div id="subheader" class="container_16">
+            <div id="breadcrump" class="grid_12 alpha">
+                <a href="https://en.opensuse.org/" title="Home"><img src="skins/bento/home_grey.png" width="16" height="16" alt="Home" /> Wiki</a> &gt; <a href="SDB%253ADevStack.html" title="">SDB:DevStack</a>
+            </div>
+
+
+                    <div id="login-wrapper" class="grid_4 omega">
+                <a href="https://en.opensuse.org/index.php?title=Special:UserLogin&amp;returnto=SDB:DevStack">Sign up</a> | <a id="login-trigger" href="SDB%253ADevStack.html#login">Login</a>
+
+                <div id="login-form">
+		                        <form action="https://login.attachmategroup.com/nidp/idff/sso?sid=0" method="post" enctype="application/x-www-form-urlencoded" name="login_form">
+                    		    <input name="target" value="http://en.opensuse.org/index.php?title=Special:UserLogin&returnto=SDB:DevStack" type="hidden"/>
+                        <input name="context" value="default" type="hidden"/>
+                        <input name="proxypath" value="reverse" type="hidden"/>
+                        <input name="message" value="Please log In" type="hidden"/>
+                        <p><label class="inlined" for="username">Username</label><input type="text" class="inline-text" name="Ecom_User_ID" value="" id="username" /></p>
+                        <p><label class="inlined" for="password">Password</label><input type="password" class="inline-text" name="Ecom_Password" value="" id="password" /></p>
+                        <p><input type="submit" value="Login" /></p>
+                        <p class="slim-footer"><a id="close-login" href="SDB%253ADevStack.html#cancel">Cancel</a></p>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Start: Main Content Area -->
+        <div id="content" class="container_16 content-wrapper">
+
+            <div class="column grid_3 alpha">
+
+               <!-- Begin custom navigation -->
+                              <div id="some_other_content" class="box box-shadow alpha clear-both navigation">
+               <h2 class="box-header">
+                  Navigation               </h2>
+                 <ul class="navigation">
+                                    <li><a href="https://en.opensuse.org/Portal:Project">Project</a></li>
+                                    <li><a href="https://en.opensuse.org/Portal:Distribution">Distribution</a></li>
+                                    <li><a href="https://en.opensuse.org/Portal:Support">Support</a></li>
+                                    <li><a href="https://en.opensuse.org/openSUSE:Communication_channels">Contact</a></li>
+                                    <li><a href="https://en.opensuse.org/openSUSE:Category_browse">Site map</a></li>
+                                   </ul>          
+               </div>
+                              <div id="some_other_content" class="box box-shadow alpha clear-both navigation">
+               <h2 class="box-header">
+                  Help               </h2>
+                 <ul class="navigation">
+                                    <li><a href="https://en.opensuse.org/Portal:Wiki">Wiki</a></li>
+                                    <li><a href="https://en.opensuse.org/Help:Concept">Create a Page</a></li>
+                                    <li><a href="https://en.opensuse.org/Help:Editing">Change a Page</a></li>
+                                    <li><a href="https://en.opensuse.org/Help:Search">Find a Page</a></li>
+                                   </ul>          
+               </div>
+               
+
+                <div id="some_other_content" class="box box-shadow alpha clear-both navigation">
+                    <h2 class="box-header">Toolbox</h2>
+                    <ul class="navigation">
+                                <li id="t-whatlinkshere"><a href="https://en.opensuse.org/Special:WhatLinksHere/SDB:DevStack" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+                                    <li id="t-recentchangeslinked"><a href="https://en.opensuse.org/Special:RecentChangesLinked/SDB:DevStack" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+                
+                                                                                                <li id="t-specialpages"><a href="https://en.opensuse.org/Special:SpecialPages">Special pages</a></li>
+                                    </ul>
+                </div>
+
+                <div id="some_other_content" class="box box-shadow alpha clear-both navigation">
+                    <h2 class="box-header">Sponsors</h2>
+                                        <a class="sponsor-image" href="https://en.opensuse.org/Sponsors"><img src="https://static.opensuse.org/themes/bento/images/sponsors/sponsor_b1-systems.png" alt="Sponsor" style="max-width: 145px;"/></a>
+                </div>
+
+
+        
+
+            </div>
+
+
+                        
+
+            <div id="some-content" class="box box-shadow grid_13 clearfix">
+                <!-- box header -->
+                <div class="box-header header-tabs">
+                    <ul>
+                                <li><a href="SDB%253ADevStack.html" class="selected">SDB</a></li><li><a href="https://en.opensuse.org/index.php?title=SDB_Talk:DevStack&amp;action=edit&amp;redlink=1" class="new" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li><li><a href="https://en.opensuse.org/index.php?title=SDB:DevStack&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li><a href="https://en.opensuse.org/index.php?title=SDB:DevStack&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                    </ul>
+                </div>
+                <div id="contentSub"><div id="mw-fr-revisiontag" class="flaggedrevs_short plainlinks noprint" onMouseOut="FlaggedRevs.onBoxMouseOut(event)"><div class="flaggedrevs_short_basic"><img class="flaggedrevs-icon" src="extensions/FlaggedRevs/client/img/2.png" alt="This is a checked version of this page" title="This is a checked version of this page" /><img id="mw-fr-revisiontoggle" class="fr-toggle-arrow" src="extensions/FlaggedRevs/client/img/arrow-down.png" style="display:none;" onMouseOver="FlaggedRevs.onBoxMouseOver()" alt="show/hide details" /></div>
+<div id="mw-fr-revisiondetails-wrapper" style="position:relative;"><div id="mw-fr-revisiondetails" class="flaggedrevs_short_details" style="display:none">This is the <a href="https://en.opensuse.org/Help:Page_validation" title="Help:Page validation">stable version</a>, <a href="https://en.opensuse.org/index.php?title=Special:Log&amp;type=review&amp;page=SDB:DevStack" class="external text" rel="nofollow">checked</a> on <i>14 February 2013</i>.<p><table id='mw-fr-revisionratings-box' align='center' class='flaggedrevs-color-1' cellpadding='0'><tr><td class='fr-text' valign='middle'>Accuracy</td><td class='fr-value40' valign='middle'>Sighted</td></tr>
+<tr><td class='fr-text' valign='middle'>Depth</td><td class='fr-value40' valign='middle'>Basic</td></tr>
+<tr><td class='fr-text' valign='middle'>Readability</td><td class='fr-value40' valign='middle'>Acceptable</td></tr>
+</table></p></div>
+</div>
+</div>
+</div>
+                <!-- End: box header -->
+
+
+                <a name="top" id="top"></a>
+
+                <div class="alpha omega">
+                    <h1>SDB:DevStack</h1>
+
+                    <h3 id="siteSub">tagline: From openSUSE</h3>
+                    <!-- <div id="contentSub"><div id="mw-fr-revisiontag" class="flaggedrevs_short plainlinks noprint" onMouseOut="FlaggedRevs.onBoxMouseOut(event)"><div class="flaggedrevs_short_basic"><img class="flaggedrevs-icon" src="/extensions/FlaggedRevs/client/img/2.png" alt="This is a checked version of this page" title="This is a checked version of this page" /><img id="mw-fr-revisiontoggle" class="fr-toggle-arrow" src="/extensions/FlaggedRevs/client/img/arrow-down.png" style="display:none;" onMouseOver="FlaggedRevs.onBoxMouseOver()" alt="show/hide details" /></div>
+<div id="mw-fr-revisiondetails-wrapper" style="position:relative;"><div id="mw-fr-revisiondetails" class="flaggedrevs_short_details" style="display:none">This is the <a href="/Help:Page_validation" title="Help:Page validation">stable version</a>, <a href="https://en.opensuse.org/index.php?title=Special:Log&amp;type=review&amp;page=SDB:DevStack" class="external text" rel="nofollow">checked</a> on <i>14 February 2013</i>.<p><table id='mw-fr-revisionratings-box' align='center' class='flaggedrevs-color-1' cellpadding='0'><tr><td class='fr-text' valign='middle'>Accuracy</td><td class='fr-value40' valign='middle'>Sighted</td></tr>
+<tr><td class='fr-text' valign='middle'>Depth</td><td class='fr-value40' valign='middle'>Basic</td></tr>
+<tr><td class='fr-text' valign='middle'>Readability</td><td class='fr-value40' valign='middle'>Acceptable</td></tr>
+</table></p></div>
+</div>
+</div>
+</div> -->
+                                    
+                    <!-- Begin Content Area -->
+                            <div class="intro-wrapper"><div class="intro"><a href="http://devstack.org/" class="external text" rel="nofollow">DevStack</a> is a set of shell scripts to build complete OpenStack development environments. It is useful to create a small OpenStack environment that will be used for hacking, testing, etc. and is therefore primarily used for upstream development.
+</div></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="SDB%253ADevStack.html#Using_DevStack_on_openSUSE"><span class="tocnumber">1</span> <span class="toctext">Using DevStack on openSUSE</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="SDB%253ADevStack.html#Preliminary_notes"><span class="tocnumber">1.1</span> <span class="toctext">Preliminary notes</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="SDB%253ADevStack.html#Configuration"><span class="tocnumber">1.2</span> <span class="toctext">Configuration</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="SDB%253ADevStack.html#Step-by-step_guide"><span class="tocnumber">1.3</span> <span class="toctext">Step-by-step guide</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="SDB%253ADevStack.html#Example_of_command_line_tools_usage"><span class="tocnumber">1.4</span> <span class="toctext">Example of command line tools usage</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="SDB%253ADevStack.html#Automatically_running_tasks_after_a_successful_stack.sh"><span class="tocnumber">1.5</span> <span class="toctext">Automatically running tasks after a successful stack.sh</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="SDB%253ADevStack.html#Seeing_the_output_of_OpenStack_services"><span class="tocnumber">1.6</span> <span class="toctext">Seeing the output of OpenStack services</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="SDB%253ADevStack.html#Stopping_DevStack"><span class="tocnumber">1.7</span> <span class="toctext">Stopping DevStack</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="SDB%253ADevStack.html#Following_runs"><span class="tocnumber">1.8</span> <span class="toctext">Following runs</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="SDB%253ADevStack.html#Using_DevStack_on_SLE"><span class="tocnumber">2</span> <span class="toctext">Using DevStack on SLE</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="SDB%253ADevStack.html#Testing_a_patch_.2F_Using_a_specific_branch_of_some_OpenStack_component"><span class="tocnumber">3</span> <span class="toctext">Testing a patch / Using a specific branch of some OpenStack component</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="SDB%253ADevStack.html#FAQ"><span class="tocnumber">4</span> <span class="toctext">FAQ</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="SDB%253ADevStack.html#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a></li>
+</ul>
+</td></tr></table>
+<h2><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:DevStack&amp;action=edit&amp;section=1" title="Edit section: Using DevStack on openSUSE">edit</a>]</span> <span class="mw-headline" id="Using_DevStack_on_openSUSE">Using DevStack on openSUSE</span></h2>
+<p>Starting with Grizzly, DevStack fully supports openSUSE (12.2 or higher). There is no openSUSE support in the stable/diablo, stable/essex and stable/folsom branches.
+</p><p>You might want to take a look at <a href="http://devstack.org/guides/single-vm.html" class="external text" rel="nofollow">this upstream guide</a> for DevStack if using DevStack for the first time. The configuration hinted below is taken from there.
+</p>
+<h3><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:DevStack&amp;action=edit&amp;section=2" title="Edit section: Preliminary notes">edit</a>]</span> <span class="mw-headline" id="Preliminary_notes">Preliminary notes</span></h3>
+<p>A few notes worth mentioning before you use DevStack:
+</p>
+<ul><li> Using DevStack will install packages and change some configuration bits, so it is recommended to either do this in a VM, or on a test machine you don't care much about.
+</li><li> Only stable versions of openSUSE are officially supported. Running DevStack on Factory should work, but you'll need to use <tt>FORCE=yes</tt> when executing <tt>./stack.sh</tt>.
+</li><li> DevStack expects to be run as non-root. If you run <tt>./stack.sh</tt> as root, it will create a <tt>stack</tt> user and run again as that user.
+</li><li> DevStack will not update git checkouts of the code after the first checkout is done, unless <tt>RECLONE=yes</tt> is used.
+</li><li> A full DevStack run can last up to 20 minutes.
+</li></ul>
+<h3><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:DevStack&amp;action=edit&amp;section=3" title="Edit section: Configuration">edit</a>]</span> <span class="mw-headline" id="Configuration">Configuration</span></h3>
+<p>The configuration of DevStack is done via simple environment variables that you set in <tt>localrc</tt>. You can look at <tt>stackrc</tt> to see some of the variables that can be set. Here is a useful subset of variables:
+</p>
+<ul><li> <tt>DEST</tt>: where DevStack will put its files (git checkouts, and more). Defaults to <tt>/opt/stack</tt>.
+</li><li> <tt>ENABLED_SERVICES</tt>: the services that will be configured and run by DevStack. See the <a href="https://github.com/openstack-dev/devstack/blob/master/README.md" class="external text" rel="nofollow">README</a> to learn how to enable/disable some services (the <tt>disable_service</tt> and <tt>enable_service</tt> are one way of doing this). If you don't know what services you want, the default value should be good enough.
+</li><li> <tt>*_PASSWORD</tt>: a set of variables to configure the password for different services. If they are not set, DevStack will prompt you to get values.
+</li><li> <tt>LOGFILE</tt>: log the output to the specified file, in addition to the output getting printed. A timestamp will be appended to the given name, so that a successive run of DevStack don't overwrite the log file.
+</li><li> <tt>IMAGE_URLS</tt>: a comma-separated list of images to upload to glance. By default, the <a href="https://launchpad.net/cirros" class="external text" rel="nofollow">CirrOS</a> image is uploaded.
+</li></ul>
+<h3><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:DevStack&amp;action=edit&amp;section=4" title="Edit section: Step-by-step guide">edit</a>]</span> <span class="mw-headline" id="Step-by-step_guide">Step-by-step guide</span></h3>
+<p>First, install git:
+</p>
+<pre>zypper --non-interactive install git-core
+</pre>
+<p>Then, get the DevStack code:
+</p>
+<pre>git clone <a href="https://github.com/openstack-dev/devstack.git" class="external free" rel="nofollow">https://github.com/openstack-dev/devstack.git</a>
+cd devstack
+</pre>
+<p>Create a minimal configuration:
+</p>
+<pre>echo ADMIN_PASSWORD=password &gt; localrc
+echo MYSQL_PASSWORD=password &gt;&gt; localrc
+echo RABBIT_PASSWORD=password &gt;&gt; localrc
+echo SERVICE_PASSWORD=password &gt;&gt; localrc
+echo SERVICE_TOKEN=tokentoken &gt;&gt; localrc
+echo FLAT_INTERFACE=br100 &gt;&gt; localrc
+echo LOGFILE=\$DEST/logs/stack.sh.log &gt;&gt; localrc
+</pre>
+<p>And run it:
+</p>
+<pre>./stack.sh
+</pre>
+<p>It will ask you for the root password at first (via sudo), or if you are logged in as root, it will create a <tt>stack</tt> user first, before running the script as this user.
+</p><p>There will be a lot of output during the execution; you can ignore that if you don't want to see what DevStack is doing. Once it's done, it should output something similar to:
+</p>
+<pre>Horizon is now available at <a href="http://192.168.100.210/" class="external free" rel="nofollow">http://192.168.100.210/</a>
+Keystone is serving at <a href="http://192.168.100.210:5000/v2.0/" class="external free" rel="nofollow">http://192.168.100.210:5000/v2.0/</a>
+Examples on using novaclient command line is in exercise.sh
+The default users are: admin and demo
+The password: password
+This is your host ip: 192.168.100.210
+stack.sh completed in 380 seconds.
+</pre>
+<p>You can now access the OpenStack web interface (horizon) or use the OpenStack command line tools to interact with OpenStack. To populate your environment with preconfigured variables to access OpenStack from the command line, simply source the <tt>openrc</tt> and the <tt>eucarc</tt> files:
+</p>
+<pre>source ./openrc
+source ./eucarc
+</pre>
+<p>You can also check the log of what DevStack did in <tt>$DEST/logs</tt> (assuming you set the <tt>$LOGFILE</tt> variable).
+</p>
+<h3><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:DevStack&amp;action=edit&amp;section=5" title="Edit section: Example of command line tools usage">edit</a>]</span> <span class="mw-headline" id="Example_of_command_line_tools_usage">Example of command line tools usage</span></h3>
+<p>Here's a quick session showing the usage of command line tools:
+</p>
+<pre>$ source openrc
+$ # let's list the images available in the cloud
+$ glance image-list
++--------------------------------------+---------------------------------+-------------+------------------+----------+--------+
+| ID                                   | Name                            | Disk Format | Container Format | Size     | Status |
++--------------------------------------+---------------------------------+-------------+------------------+----------+--------+
+| 79d4de59-6037-4ddb-9e70-1cd5d8f71c10 | cirros-0.3.0-x86_64-uec         | ami         | ami              | 25165824 | active |
+| 0c7e2e3c-74eb-4cf3-9233-0a088c5d7a1f | cirros-0.3.0-x86_64-uec-kernel  | aki         | aki              | 4731440  | active |
+| fcecc879-869b-4313-b3c4-b0bb3404ebda | cirros-0.3.0-x86_64-uec-ramdisk | ari         | ari              | 2254249  | active |
++--------------------------------------+---------------------------------+-------------+------------------+----------+--------+
+$ # let's boot an instance with one of the images
+$ nova boot --image cirros-0.3.0-x86_64-uec --flavor m1.tiny cirros-test
++------------------------+--------------------------------------+
+| Property               | Value                                |
++------------------------+--------------------------------------+
+| OS-DCF:diskConfig      | MANUAL                               |
+| OS-EXT-STS:power_state | 0                                    |
+| OS-EXT-STS:task_state  | scheduling                           |
+| OS-EXT-STS:vm_state    | building                             |
+| accessIPv4             |                                      |
+| accessIPv6             |                                      |
+| adminPass              | JBQyHuvHpg8a                         |
+| config_drive           |                                      |
+| created                | 2012-12-20T17:59:21Z                 |
+| flavor                 | m1.tiny                              |
+| hostId                 |                                      |
+| id                     | 78d93752-a14c-4cb1-8aea-a97b2b40259c |
+| image                  | cirros-0.3.0-x86_64-uec              |
+| key_name               | None                                 |
+| metadata               | {}                                   |
+| name                   | cirros-test                          |
+| progress               | 0                                    |
+| security_groups        | [{u'name': u'default'}]              |
+| status                 | BUILD                                |
+| tenant_id              | 21896ae22a1042b49e24ea7beb5cdb5e     |
+| updated                | 2012-12-20T17:59:22Z                 |
+| user_id                | 8250ba978fe547e9bec9024b4708e62b     |
++------------------------+--------------------------------------+
+$ # now, what instances are in our cloud?
+$ nova list
++--------------------------------------+-------------+--------+------------------+
+| ID                                   | Name        | Status | Networks         |
++--------------------------------------+-------------+--------+------------------+
+| 78d93752-a14c-4cb1-8aea-a97b2b40259c | cirros-test | BUILD  | private=10.0.0.2 |
++--------------------------------------+-------------+--------+------------------+
+$ # hrm, the one that we started is building. Let's wait a bit and then check again...
+$ nova list
++--------------------------------------+-------------+--------+------------------+
+| ID                                   | Name        | Status | Networks         |
++--------------------------------------+-------------+--------+------------------+
+| 78d93752-a14c-4cb1-8aea-a97b2b40259c | cirros-test | ACTIVE | private=10.0.0.2 |
++--------------------------------------+-------------+--------+------------------+
+$ # there we are, it's running!
+</pre>
+<h3><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:DevStack&amp;action=edit&amp;section=6" title="Edit section: Automatically running tasks after a successful stack.sh">edit</a>]</span> <span class="mw-headline" id="Automatically_running_tasks_after_a_successful_stack.sh">Automatically running tasks after a successful stack.sh</span></h3>
+<p>DevStack will automatically run <tt>local.sh</tt> if it exists after <tt>./stack.sh</tt> completed successfully. This can be used to do some additional configuration of OpenStack (uploading keypairs, creating new flavors, etc.), for instance. See the <a href="https://github.com/openstack-dev/devstack/blob/master/samples/local.sh" class="external text" rel="nofollow">local.sh example</a> for more details.
+</p>
+<h3><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:DevStack&amp;action=edit&amp;section=7" title="Edit section: Seeing the output of OpenStack services">edit</a>]</span> <span class="mw-headline" id="Seeing_the_output_of_OpenStack_services">Seeing the output of OpenStack services</span></h3>
+<p>DevStack starts the OpenStack services in a screen session. You can simply use <tt>./rejoin-stack.sh</tt> to attach to the screen session. Each OpenStack service has its own window in the screen session, so it's easy to see what's going on for a specific service, but also to stop/start a service again (don't be afraid of Ctrl-C).
+</p>
+<h3><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:DevStack&amp;action=edit&amp;section=8" title="Edit section: Stopping DevStack">edit</a>]</span> <span class="mw-headline" id="Stopping_DevStack">Stopping DevStack</span></h3>
+<p>Simply run <tt>./unstack.sh</tt> to kill all the OpenStack processes. You can pass the <tt>--all</tt> parameter to also stop services that were started by DevStack.
+</p>
+<h3><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:DevStack&amp;action=edit&amp;section=9" title="Edit section: Following runs">edit</a>]</span> <span class="mw-headline" id="Following_runs">Following runs</span></h3>
+<p>Following runs of <tt>./stack.sh</tt> will still execute the whole script. The rationale is that this will force the latest configuration of the OpenStack deployment, as wanted by DevStack. Obviously, following runs won't reinstall the packages.
+</p><p>Please note that following runs of DevStack will not update the OpenStack code to latest git. This enables the use of DevStack against specific versions of the code. If you want to update to the latest git, you shall do this manually with git in each of the git checkouts that are in <tt>/opt/stack</tt> (or <tt>$DEST</tt>, if you changed it in localrc), or run <tt>./stack.sh</tt> with <tt>RECLONE=yes</tt>.
+</p>
+<h2><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:DevStack&amp;action=edit&amp;section=10" title="Edit section: Using DevStack on SLE">edit</a>]</span> <span class="mw-headline" id="Using_DevStack_on_SLE">Using DevStack on SLE</span></h2>
+<p>While SLE is not officially supported, DevStack should mostly work well with an up-to-date SLE11 SP2. You will need to make sure you have all the required packages available somehow, though, as some of them are not shipped as part of SLE. You will also likely hit a few roadbumps here and there, but they shouldn't be hard to fix (it's a shell script, after all).
+</p><p>If you still want to go ahead with DevStack on SLE, just follow the instructions for openSUSE: they should work for SLE too.
+</p>
+<h2><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:DevStack&amp;action=edit&amp;section=11" title="Edit section: Testing a patch / Using a specific branch of some OpenStack component">edit</a>]</span> <span class="mw-headline" id="Testing_a_patch_.2F_Using_a_specific_branch_of_some_OpenStack_component">Testing a patch / Using a specific branch of some OpenStack component</span></h2>
+<p>The main point of DevStack is to be able to test some experimental OpenStack code. After the first DevStack run, there will be git checkouts of the code for the OpenStack components that are configured to be used in <tt>/opt/stack</tt> (or <tt>$DEST</tt>, if you changed it in localrc).
+</p><p>To test a patch or use a specific branch for an OpenStack component, simply change the code in <tt>/opt/stack</tt> and run <tt>./stack.sh</tt> again.
+</p>
+<h2><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:DevStack&amp;action=edit&amp;section=12" title="Edit section: FAQ">edit</a>]</span> <span class="mw-headline" id="FAQ">FAQ</span></h2>
+<p><b>I can't start <tt>./stack.sh</tt> again, it warns me about some screen that is running.</b><br />
+Simply call <tt>./unstack.sh</tt> to completely kill the currently running devstack deployment.
+</p><p><b>I can't access the dashboard (or any other services) after running <tt>./stack.sh</tt></b><br />
+Make sure your firewall is allowing access to the ports, or simply disable your firewall if you're in a secure environment.
+</p><p><b>I have another issue.</b><br />
+You can contact <a href="https://en.opensuse.org/User:Vuntz" title="User:Vuntz">Vincent</a> if you think it's an openSUSE-specific issue. Otherwise, please <a href="https://bugs.launchpad.net/devstack" class="external text" rel="nofollow">file a bug upstream</a>.
+</p>
+<h2><span class="editsection">[<a href="https://en.opensuse.org/index.php?title=SDB:DevStack&amp;action=edit&amp;section=13" title="Edit section: External links">edit</a>]</span> <span class="mw-headline" id="External_links">External links</span></h2>
+<ul><li> <a href="http://devstack.org" class="external text" rel="nofollow">DevStack</a>
+</li><li> <a href="http://www.openstack.org" class="external text" rel="nofollow">OpenStack</a>
+</li></ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 63/1000000
+Post-expand include size: 334/2097152 bytes
+Template argument size: 267/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in stable version parser cache with key opensuse_en:stable-pcache:idhash:9239-0!1!0!!en!2 and timestamp 20130320095249 --><div class="printfooter">
+Retrieved from "<a href="SDB%253ADevStack.html">https://en.opensuse.org/SDB:DevStack</a>"</div>
+
+        <div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="https://en.opensuse.org/Special:Categories" title="Special:Categories">Categories</a>: <span dir='ltr'><a href="https://en.opensuse.org/Category:SDB:HOWTOs" title="Category:SDB:HOWTOs">SDB:HOWTOs</a></span> | <span dir='ltr'><a href="https://en.opensuse.org/Category:Cloud" title="Category:Cloud">Cloud</a></span> | <span dir='ltr'><a href="https://en.opensuse.org/Category:OpenStack" title="Category:OpenStack">OpenStack</a></span></div></div>                            <!-- End Content Area -->
+
+                </div>
+                <br/>
+
+                <div class="box-footer header-tabs">
+                    <ul>
+                                <li><a href="SDB%253ADevStack.html" class="selected">SDB</a></li><li><a href="https://en.opensuse.org/index.php?title=SDB_Talk:DevStack&amp;action=edit&amp;redlink=1" class="new" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li><li><a href="https://en.opensuse.org/index.php?title=SDB:DevStack&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li><a href="https://en.opensuse.org/index.php?title=SDB:DevStack&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                    </ul>
+                </div>
+
+            </div></div>
+
+        <!-- Note: this clears floating, set in previous elements -->
+        <div class="clear"></div>
+
+
+        <!-- Start: Footer -->
+                <!-- Start: included footer part -->
+<div id="footer" class="container_12">
+    <div id="footer-legal" class="border-top grid_12">
+        <p>This page has been accessed 1,022 times.</p><p>
+            &copy; 2011 Novell, Inc. and others.  All content  is made available under the terms
+            of the GNU Free Documentation License version 1.2 ("GFDL") unless expressly
+            otherwise indicated. | <a href="https://en.opensuse.org/Terms_of_site">Terms of site</a>
+        </p>
+    </div>
+</div>
+
+<!-- End: included footer part -->
+        <!-- End: Footer -->
+
+        
+<script src="load.php@debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=bentofluid&amp;%252A"></script>
+<script>if ( window.mediaWiki ) {
+	mediaWiki.config.set({"wgCanonicalNamespace": "SDB", "wgCanonicalSpecialPageName": false, "wgNamespaceNumber": 100, "wgPageName": "SDB:DevStack", "wgTitle": "DevStack", "wgAction": "view", "wgArticleId": 9239, "wgIsArticle": true, "wgUserName": null, "wgUserGroups": ["*"], "wgCurRevisionId": 58172, "wgCategories": ["SDB:HOWTOs", "Cloud", "OpenStack"], "wgBreakFrames": false, "wgRestrictionEdit": [], "wgRestrictionMove": [], "wgWikiEditorEnabledModules": {"toolbar": true, "dialogs": true, "templateEditor": false, "templates": false, "addMediaWizard": false, "preview": true, "previewDialog": false, "publish": false, "toc": false}, "wgFlaggedRevsParams": {"tags": {"accuracy": {"levels": 3, "quality": 2, "pristine": 4}, "depth": {"levels": 3, "quality": 1, "pristine": 4}, "style": {"levels": 3, "quality": 1, "pristine": 4}}}, "wgStableRevisionId": 58172, "wgRevContents": {"error": "Unable to get content.", "waiting": "Waiting for content"}, "sfgRemoveText": "Remove", "sfgAutocompleteOnAllChars": false, "sfgAutocompleteValues": {}, "sfgShowOnSelect": {}, "sfgFormErrorsHeader": "There were errors with your form input; see below", "sfgBlankErrorStr": "cannot be blank", "sfgBadURLErrorStr": "must have the correct URL format, starting with \"http\"", "sfgBadEmailErrorStr": "must have a valid email address format", "sfgBadNumberErrorStr": "must be a valid number", "sfgBadDateErrorStr": "must be a valid date", "sfgAnonEditWarning": "Warning: You are not logged in. Your IP address will be recorded in this page\'s edit history.", "egMapsDebugJS": false});
+}
+</script>
+<script>if ( window.mediaWiki ) {
+	mediaWiki.loader.load(["mediawiki.util", "mediawiki.legacy.wikibits", "mediawiki.legacy.ajax"]);
+	mediaWiki.loader.go();
+}
+</script>
+
+<script src="extensions/FlaggedRevs/client/flaggedrevs.js@87&amp;301"></script>
+<script>
+FlaggedRevs.messages = {"diffToggleShow": "show those changes", "diffToggleHide": "hide those changes", "logToggleShow": "show stability log", "logToggleHide": "hide stability log", "logDetailsShow": "show details", "logDetailsHide": "hide details", "toggleShow": "(+)", "toggleHide": "(-)"};
+</script>
+<script src="load.php@debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=bentofluid&amp;%252A"></script>
+<script>if ( window.mediaWiki ) {
+	mediaWiki.user.options.set({"ccmeonemails":0,"cols":80,"contextchars":50,"contextlines":5,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"bentofluid","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+	"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"wikieditor-preview":1,"flaggedrevssimpleui":1,"flaggedrevsstable":false,"flaggedrevseditdiffs":true,"flaggedrevsviewdiffs":false,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"searchNs101":false,"searchNs102":true,"searchNs103":false,"searchNs104":false,"searchNs105":false,"searchNs106":false,"searchNs107":false,"searchNs110":false,"searchNs111":false,"searchNs122":false,"searchNs123":false,"searchNs126":false,"searchNs127":false,"searchNs128":false,"searchNs129":false,
+	"searchNs420":false,"searchNs421":false});;mediaWiki.loader.state({"user.options":"ready"});
+}
+</script>        <!-- Served in 0.141 secs. -->
+    </body>
+</html>
+        

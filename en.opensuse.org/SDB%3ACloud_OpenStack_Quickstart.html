@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="generator" content="MediaWiki 1.17.0" />
+<link rel="shortcut icon" href="http://www.opensuse.org/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://en.opensuse.org/opensearch_desc.php" title="openSUSE (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://en.opensuse.org/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="openSUSE Atom feed" href="http://en.opensuse.org/index.php?title=Special:RecentChanges&amp;feed=atom" />        <title>SDB:Cloud OpenStack Quickstart - openSUSE</title>
+        <link rel="stylesheet" href="load.php@debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint,shared&amp;only=styles&amp;skin=bentofluid&amp;%252A.css" />
+<link rel="stylesheet" href="http://static.opensuse.org/themes/bento/css/style.fluid.css" media="screen" />
+<link rel="stylesheet" href="extensions/FlaggedRevs/client/flaggedrevs.css@87.css" /><meta name="ResourceLoaderDynamicStyles" content="" /><link rel="stylesheet" href="load.php@debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=bentofluid&amp;%252A.css" />
+<link rel="stylesheet" href="load.php@debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=bentofluid&amp;%252A.css" />
+<link rel="stylesheet" href="load.php@debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=bentofluid&amp;%252A.css" />
+        <link rel="stylesheet" href="skins/bento/css_local/style.css" type="text/css" media="screen" />
+        <!--[if lt IE 7]>
+        <meta http-equiv="imagetoolbar" content="no" />
+        <![endif]-->
+        <script>if ( window.mediaWiki ) {
+	mediaWiki.config.set({"wgCanonicalNamespace": "SDB", "wgCanonicalSpecialPageName": false, "wgNamespaceNumber": 100, "wgPageName": "SDB:Cloud_OpenStack_Quickstart", "wgTitle": "Cloud OpenStack Quickstart", "wgAction": "view", "wgArticleId": 7945, "wgIsArticle": true, "wgUserName": null, "wgUserGroups": ["*"], "wgCurRevisionId": 58155, "wgCategories": ["OpenStack"], "wgBreakFrames": false, "wgRestrictionEdit": [], "wgRestrictionMove": [], "wgWikiEditorEnabledModules": {"toolbar": true, "dialogs": true, "templateEditor": false, "templates": false, "addMediaWizard": false, "preview": true, "previewDialog": false, "publish": false, "toc": false}, "wgFlaggedRevsParams": {"tags": {"accuracy": {"levels": 3, "quality": 2, "pristine": 4}, "depth": {"levels": 3, "quality": 1, "pristine": 4}, "style": {"levels": 3, "quality": 1, "pristine": 4}}}, "wgStableRevisionId": 58155, "wgRevContents": {"error": "Unable to get content.", "waiting": "Waiting for content"}, "sfgRemoveText": "Remove", "sfgAutocompleteOnAllChars": false, "sfgAutocompleteValues": {}, "sfgShowOnSelect": {}, "sfgFormErrorsHeader": "There were errors with your form input; see below", "sfgBlankErrorStr": "cannot be blank", "sfgBadURLErrorStr": "must have the correct URL format, starting with \"http\"", "sfgBadEmailErrorStr": "must have a valid email address format", "sfgBadNumberErrorStr": "must be a valid number", "sfgBadDateErrorStr": "must be a valid date", "sfgAnonEditWarning": "Warning: You are not logged in. Your IP address will be recorded in this page\'s edit history.", "egMapsDebugJS": false});
+}
+</script>        <script type="text/javascript" src="skins/common/wikibits.js@301"><!-- wikibits js --></script>
+        <script type="text/javascript" src="http://static.opensuse.org/stage/themes/bento/js/jquery.js"></script>
+        <script type="text/javascript" src="http://static.opensuse.org/stage/themes/bento/js/script.js"></script>
+        <script type="text/javascript" src="skins/bento/js_local/script.js"></script>
+        <script type="text/javascript" src="skins/bento/js_local/search.js"></script>
+
+        <script type="text/javascript" src="http://static.opensuse.org/themes/bento/js/l10n/global-navigation-data-en.js"></script>
+        <script type="text/javascript" src="http://static.opensuse.org/themes/bento/js/global-navigation.js"></script>
+
+        <link rel="icon" type="image/png" href="http://static.opensuse.org/themes/bento/images/favicon.png" />
+
+        <!-- Head Scripts -->
+                <script src="extensions/FlaggedRevs/client/flaggedrevs.js@87&amp;301"></script>
+<script>
+FlaggedRevs.messages = {"diffToggleShow": "show those changes", "diffToggleHide": "hide those changes", "logToggleShow": "show stability log", "logToggleHide": "hide stability log", "logDetailsShow": "show details", "logDetailsHide": "hide details", "toggleShow": "(+)", "toggleHide": "(-)"};
+</script>
+		<link rel="alternate" type="application/rdf+xml" title="SDB:Cloud OpenStack Quickstart" href="http://en.opensuse.org/index.php?title=Special:ExportRDF/SDB:Cloud_OpenStack_Quickstart&amp;xmlmime=rdf" />
+                                                                        
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      (function(){
+        var u=(("https:" == document.location.protocol) ? "https://beans.opensuse.org/piwik/" : "http://beans.opensuse.org/piwik/");
+        _paq.push(['setSiteId', 9]);
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['trackPageView']);
+        _paq.push([ 'setDomains', ["*.opensuse.org"]]);
+        var d=document,
+        g=d.createElement('script'),
+        s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript';
+        g.defer=true;
+        g.async=true;
+        g.src=u+'piwik.js';
+        s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Piwik Code -->
+
+
+    </head>
+
+    <body                                                               class="mediawiki ltr ns-100 ns-subject page-SDB_Cloud_OpenStack_Quickstart skin-bentofluid">
+
+        <!-- Start: Header -->
+                  <!-- Start: Header -->
+  <div id="header">
+    <div id="header-content" class="container_12">
+      <a id="header-logo" href="http://www.opensuse.org"><img src="skins/bento/header-logo.png" width="46" height="26" alt="Header Logo" /></a>
+      <ul id="global-navigation">
+        <li id="item-downloads"><a href="http://en.opensuse.org/openSUSE:Browse#Downloads">Downloads</a></li>
+        <li id="item-support"><a href="http://en.opensuse.org/openSUSE:Browse#Support">Support</a></li>
+        <li id="item-community"><a href="http://en.opensuse.org/openSUSE:Browse#Community">Community</a></li>
+        <li id="item-development"><a href="http://en.opensuse.org/openSUSE:Browse#Development">Development</a></li>
+      </ul>
+      <form id="global-search-form" action="http://en.opensuse.org/Special:Search" method="post" accept-charset="utf-8">
+        <label for="search">Search</label>
+        <input type="text" name="search" value="" id="search" />
+        <input type="submit" name="go" class="hidden"  value="Search"  title="Go to a page with this exact name if exists"/>
+      </form>
+    </div>
+  </div>
+  <!-- End: Header -->
+        <!-- End: Header -->
+
+        <div id="subheader" class="container_16">
+            <div id="breadcrump" class="grid_12 alpha">
+                <a href="http://en.opensuse.org/" title="Home"><img src="skins/bento/home_grey.png" width="16" height="16" alt="Home" /> Wiki</a> &gt; <a href="SDB%253ACloud_OpenStack_Quickstart.html" title="">SDB:Cloud OpenStack Quickstart</a>
+            </div>
+
+
+                    <div id="login-wrapper" class="grid_4 omega">
+                <a href="http://en.opensuse.org/index.php?title=Special:UserLogin&amp;returnto=SDB:Cloud_OpenStack_Quickstart">Sign up</a> | <a id="login-trigger" href="SDB%253ACloud_OpenStack_Quickstart.html#login">Login</a>
+
+                <div id="login-form">
+		                        <form action="https://login.attachmategroup.com/nidp/idff/sso?sid=0" method="post" enctype="application/x-www-form-urlencoded" name="login_form">
+                    		    <input name="target" value="http://en.opensuse.org/index.php?title=Special:UserLogin&returnto=SDB:Cloud_OpenStack_Quickstart" type="hidden"/>
+                        <input name="context" value="default" type="hidden"/>
+                        <input name="proxypath" value="reverse" type="hidden"/>
+                        <input name="message" value="Please log In" type="hidden"/>
+                        <p><label class="inlined" for="username">Username</label><input type="text" class="inline-text" name="Ecom_User_ID" value="" id="username" /></p>
+                        <p><label class="inlined" for="password">Password</label><input type="password" class="inline-text" name="Ecom_Password" value="" id="password" /></p>
+                        <p><input type="submit" value="Login" /></p>
+                        <p class="slim-footer"><a id="close-login" href="SDB%253ACloud_OpenStack_Quickstart.html#cancel">Cancel</a></p>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Start: Main Content Area -->
+        <div id="content" class="container_16 content-wrapper">
+
+            <div class="column grid_3 alpha">
+
+               <!-- Begin custom navigation -->
+                              <div id="some_other_content" class="box box-shadow alpha clear-both navigation">
+               <h2 class="box-header">
+                  Navigation               </h2>
+                 <ul class="navigation">
+                                    <li><a href="http://en.opensuse.org/Portal:Project">Project</a></li>
+                                    <li><a href="http://en.opensuse.org/Portal:Distribution">Distribution</a></li>
+                                    <li><a href="http://en.opensuse.org/Portal:Support">Support</a></li>
+                                    <li><a href="http://en.opensuse.org/openSUSE:Communication_channels">Contact</a></li>
+                                    <li><a href="http://en.opensuse.org/openSUSE:Category_browse">Site map</a></li>
+                                   </ul>          
+               </div>
+                              <div id="some_other_content" class="box box-shadow alpha clear-both navigation">
+               <h2 class="box-header">
+                  Help               </h2>
+                 <ul class="navigation">
+                                    <li><a href="http://en.opensuse.org/Portal:Wiki">Wiki</a></li>
+                                    <li><a href="http://en.opensuse.org/Help:Concept">Create a Page</a></li>
+                                    <li><a href="http://en.opensuse.org/Help:Editing">Change a Page</a></li>
+                                    <li><a href="http://en.opensuse.org/Help:Search">Find a Page</a></li>
+                                   </ul>          
+               </div>
+               
+
+                <div id="some_other_content" class="box box-shadow alpha clear-both navigation">
+                    <h2 class="box-header">Toolbox</h2>
+                    <ul class="navigation">
+                                <li id="t-whatlinkshere"><a href="http://en.opensuse.org/Special:WhatLinksHere/SDB:Cloud_OpenStack_Quickstart" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+                                    <li id="t-recentchangeslinked"><a href="http://en.opensuse.org/Special:RecentChangesLinked/SDB:Cloud_OpenStack_Quickstart" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+                
+                                                                                                <li id="t-specialpages"><a href="http://en.opensuse.org/Special:SpecialPages">Special pages</a></li>
+                                    </ul>
+                </div>
+
+                <div id="some_other_content" class="box box-shadow alpha clear-both navigation">
+                    <h2 class="box-header">Sponsors</h2>
+                                        <a class="sponsor-image" href="http://en.opensuse.org/Sponsors"><img src="http://static.opensuse.org/themes/bento/images/sponsors/sponsor_amd.png" alt="Sponsor" style="max-width: 145px;"/></a>
+                </div>
+
+
+        
+
+            </div>
+
+
+                        
+
+            <div id="some-content" class="box box-shadow grid_13 clearfix">
+                <!-- box header -->
+                <div class="box-header header-tabs">
+                    <ul>
+                                <li><a href="SDB%253ACloud_OpenStack_Quickstart.html" class="selected">SDB</a></li><li><a href="http://en.opensuse.org/SDB_Talk:Cloud_OpenStack_Quickstart" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li><li><a href="http://en.opensuse.org/index.php?title=SDB:Cloud_OpenStack_Quickstart&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li><a href="http://en.opensuse.org/index.php?title=SDB:Cloud_OpenStack_Quickstart&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                    </ul>
+                </div>
+                <div id="contentSub"><div id="mw-fr-revisiontag" class="flaggedrevs_short plainlinks noprint" onMouseOut="FlaggedRevs.onBoxMouseOut(event)"><div class="flaggedrevs_short_basic"><img class="flaggedrevs-icon" src="extensions/FlaggedRevs/client/img/2.png" alt="This is a checked version of this page" title="This is a checked version of this page" /><img id="mw-fr-revisiontoggle" class="fr-toggle-arrow" src="extensions/FlaggedRevs/client/img/arrow-down.png" style="display:none;" onMouseOver="FlaggedRevs.onBoxMouseOver()" alt="show/hide details" /></div>
+<div id="mw-fr-revisiondetails-wrapper" style="position:relative;"><div id="mw-fr-revisiondetails" class="flaggedrevs_short_details" style="display:none">This is the <a href="http://en.opensuse.org/Help:Page_validation" title="Help:Page validation">stable version</a>, <a href="http://en.opensuse.org/index.php?title=Special:Log&amp;type=review&amp;page=SDB:Cloud_OpenStack_Quickstart" class="external text" rel="nofollow">checked</a> on <i>14 February 2013</i>.<p><table id='mw-fr-revisionratings-box' align='center' class='flaggedrevs-color-1' cellpadding='0'><tr><td class='fr-text' valign='middle'>Accuracy</td><td class='fr-value40' valign='middle'>Sighted</td></tr>
+<tr><td class='fr-text' valign='middle'>Depth</td><td class='fr-value40' valign='middle'>Basic</td></tr>
+<tr><td class='fr-text' valign='middle'>Readability</td><td class='fr-value40' valign='middle'>Acceptable</td></tr>
+</table></p></div>
+</div>
+</div>
+</div>
+                <!-- End: box header -->
+
+
+                <a name="top" id="top"></a>
+
+                <div class="alpha omega">
+                    <h1>SDB:Cloud OpenStack Quickstart</h1>
+
+                    <h3 id="siteSub">tagline: From openSUSE</h3>
+                    <!-- <div id="contentSub"><div id="mw-fr-revisiontag" class="flaggedrevs_short plainlinks noprint" onMouseOut="FlaggedRevs.onBoxMouseOut(event)"><div class="flaggedrevs_short_basic"><img class="flaggedrevs-icon" src="/extensions/FlaggedRevs/client/img/2.png" alt="This is a checked version of this page" title="This is a checked version of this page" /><img id="mw-fr-revisiontoggle" class="fr-toggle-arrow" src="/extensions/FlaggedRevs/client/img/arrow-down.png" style="display:none;" onMouseOver="FlaggedRevs.onBoxMouseOver()" alt="show/hide details" /></div>
+<div id="mw-fr-revisiondetails-wrapper" style="position:relative;"><div id="mw-fr-revisiondetails" class="flaggedrevs_short_details" style="display:none">This is the <a href="/Help:Page_validation" title="Help:Page validation">stable version</a>, <a href="http://en.opensuse.org/index.php?title=Special:Log&amp;type=review&amp;page=SDB:Cloud_OpenStack_Quickstart" class="external text" rel="nofollow">checked</a> on <i>14 February 2013</i>.<p><table id='mw-fr-revisionratings-box' align='center' class='flaggedrevs-color-1' cellpadding='0'><tr><td class='fr-text' valign='middle'>Accuracy</td><td class='fr-value40' valign='middle'>Sighted</td></tr>
+<tr><td class='fr-text' valign='middle'>Depth</td><td class='fr-value40' valign='middle'>Basic</td></tr>
+<tr><td class='fr-text' valign='middle'>Readability</td><td class='fr-value40' valign='middle'>Acceptable</td></tr>
+</table></p></div>
+</div>
+</div>
+</div> -->
+                                    
+                    <!-- Begin Content Area -->
+                            <table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="SDB%253ACloud_OpenStack_Quickstart.html#Openstack_installation_from_RPM_packages"><span class="tocnumber">1</span> <span class="toctext">Openstack installation from RPM packages</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="SDB%253ACloud_OpenStack_Quickstart.html#OpenStack_Appliance_Quickstart"><span class="tocnumber">2</span> <span class="toctext">OpenStack Appliance Quickstart</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="SDB%253ACloud_OpenStack_Quickstart.html#Extra_Notes"><span class="tocnumber">2.1</span> <span class="toctext">Extra Notes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="SDB%253ACloud_OpenStack_Quickstart.html#Getting_extra_compute-nodes_into_your_cloud"><span class="tocnumber">3</span> <span class="toctext">Getting extra compute-nodes into your cloud</span></a></li>
+</ul>
+</td></tr></table>
+<h2><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Cloud_OpenStack_Quickstart&amp;action=edit&amp;section=1" title="Edit section: Openstack installation from RPM packages">edit</a>]</span> <span class="mw-headline" id="Openstack_installation_from_RPM_packages"> Openstack installation from RPM packages </span></h2>
+<p>Packages for OpenStack are built under <a href="https://build.opensuse.org/project/subprojects?project=Cloud%3AOpenStack" class="external text" rel="nofollow">sub-projects of the OBS Cloud:OpenStack repository</a>.  See <a href="http://en.opensuse.org/OpenStack_and_Crowbar_development_process" title="OpenStack and Crowbar development process" class="mw-redirect">OpenStack and Crowbar development process</a> for the workflow.
+</p>
+<div style="margin:.2em;"><div style="margin-left:15px; width: 48px; float:left;"><a href="http://en.opensuse.org/index.php?title=File:Icon-warning.png&amp;filetimestamp=20100616123350" class="image"><img alt="Icon-warning.png" src="images/thumb/3/3b/Icon-warning.png/48px-Icon-warning.png" width="48" height="48" /></a></div><div style="margin-left:70px; border-left:1px solid #babdb6; padding-left:.5em; padding-top:1px;">
+The rest of this page is out of date, and hopefully will be updated soon.</div>
+<div style="clear:left"></div> 
+</div>
+<p><br />
+</p>
+<pre>zypper in -t pattern openstack-controller openstack-compute-node
+</pre>
+<p>will install the following OpenStack components on one host: 
+</p>
+<ul><li>OpenStack Compute: Nova
+</li><li>OpenStack Image Service: Glance
+</li><li>OpenStack Identity Service: Keystone
+</li><li>OpenStack Dashboard: Horizon
+</li></ul>
+<p>The package openstack-quickstart provides the script openstack-quickstart-demosetup which will configure a working demo setup of openstack on your host. If you intend to add more nodes to your cloud, best set the IP value in the openstack-quickstart-demosetup script to your public IP-address.
+</p>
+<div class="info-wrapper">
+<div class="info"><p> Before running openstack-quickstart-demosetup you should set the testnet variable in it to an ip range that is available in your local network. </p></div></div>
+<div class="info-wrapper">
+<div class="info"><p> The credentials to login to the openstack dashboard webapp are: admin:openstack</p></div></div>
+<h2><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Cloud_OpenStack_Quickstart&amp;action=edit&amp;section=2" title="Edit section: OpenStack Appliance Quickstart">edit</a>]</span> <span class="mw-headline" id="OpenStack_Appliance_Quickstart"> OpenStack Appliance Quickstart </span></h2>
+<p>If you want a usable test deployment
+you need one machine that supports hardware virtualization. On Linux you can test that with
+</p>
+<pre>grep -q -e vmx -e svm /proc/cpuinfo &amp;&amp; echo OK || echo no sorry
+</pre>
+<p>You also need at least 3GB RAM and an empty / spare harddisk.
+</p><p>Download the <a href="http://susestudio.com/a/E5zfDp/suse-cloud-powered-by-openstack-tm" class="external text" rel="nofollow">315MB Preload ISO</a> (needs login).
+</p><p>Burn the iso image onto a CD using
+</p>
+<pre>cdrecord ~/Download/SUSE_Cloud_Powered_by_OpenStacktm.x86_64-0.0.51.preload.iso
+</pre>
+<p>Booting the CD on your machine with the empty HDD allows you to easily dump the cloud software onto the HDD. You can detach other HDDs to make sure that they are not accidentally overwritten.
+</p><p>When the installed system has booted up, first accept the SLES license with "y".
+Next, set the hostname to your liking, 
+enable the checkbox "Assign Hostname to Loopback IP".
+On the next dialog, make sure that there is a Network Bridge entry with DHCP. If it is not there, select "Change" and "Reset to defaults". Hit "Next".
+Wait a minute for the "login:" promt to appear. Then you can log in with username root and password openstack.
+You should also be able to access the dashboard with a web-browser on the machine's IP using "admin" or "demo" as username and "openstack" as password. Under System Panel / Services, the dashboard should show 7 green entries.
+</p><p>To upload an image to your new cloud, you first have to have it as HDD image on the cloud host.
+E.g. you can grab a minimalist openSUSE-11.4 image (135MB) by doing
+</p>
+<pre># in a root shell
+curl <a href="http://mirror.zq1.de/opensuse/images/openSUSE_11.4_JeOS.i686-0.0.1.raw.gz" class="external free" rel="nofollow">http://mirror.zq1.de/opensuse/images/openSUSE_11.4_JeOS.i686-0.0.1.raw.gz</a> | gzip -d &gt; jeos.raw
+# Or build and download such images from <a href="http://susestudio.com" class="external free" rel="nofollow">http://susestudio.com</a>
+glance -A $TOKEN add name="jeos" is_public=True &lt; jeos.raw # to import it
+glance -A $TOKEN index          # should show the added image
+nova image-list                 # should show the added image, too
+# tell it about what network address range to use for VMs:
+nova-manage network create --fixed_range_v4=10.10.134.16/29 --label=testnet
+nova flavor-list # shows available VM sizes
+nova boot --flavor 2 --image 1 test # starts a small VM named "test"
+nova list # shows running VMs
+vncviewer $YOURHOSTIP:0 # should show the first running VM
+# first VM boot always takes roughly four extra minutes for the resize2fs
+# network access from the outside is blocked by default in the cloud-firewall, so you have to allow it with
+nova secgroup-add-rule default icmp -1 -1 0.0.0.0/0 # to allow ping
+#nova secgroup-add-rule default tcp 22 22 0.0.0.0/0 # to allow only SSH or do
+nova secgroup-add-rule default tcp 1 65535 0.0.0.0/0 # to allow all TCP
+nova secgroup-add-rule default udp 1 65535 0.0.0.0/0 # and all UDP
+nova secgroup-list-rules default # lists the rules
+# Now you should be able to 
+ssh root@YOURVMIP # password: linux
+</pre>
+<p>and have a lot of fun...
+</p>
+<h3><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Cloud_OpenStack_Quickstart&amp;action=edit&amp;section=3" title="Edit section: Extra Notes">edit</a>]</span> <span class="mw-headline" id="Extra_Notes">Extra Notes</span></h3>
+<p>If you had shutdown a VM, you can restart it with
+</p>
+<pre>nova reboot 1 # where 1 is the VM's ID that can be seen in 'nova list'
+</pre>
+<h2><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Cloud_OpenStack_Quickstart&amp;action=edit&amp;section=4" title="Edit section: Getting extra compute-nodes into your cloud">edit</a>]</span> <span class="mw-headline" id="Getting_extra_compute-nodes_into_your_cloud"> Getting extra compute-nodes into your cloud </span></h2>
+<p>The default appfault appliance is designed to be simple to setup as a single-node cloud. To be able to add more nodes to your cloud, you first need to adapt some config files on the cloud-controller.
+You must edit /etc/nova/nova.conf and /etc/nova/api-paste.ini to replace all occurrences of 127.0.0.1 and localhost with the actual public IP of your cloud-controller. Then restart all active openstack-nova services.
+</p><p>On the additional node, you only need
+</p>
+<pre>zypper in -t pattern openstack-compute-node
+edit /usr/bin/openstack-quickstart-extranodesetup # set IP to your cloud controller's
+openstack-quickstart-extranodesetup
+</pre>
+<p><br />
+If you ran your controller setup with the wrong IP, you need to
+</p>
+<pre> echo "delete from endpoint_templates;" | sqlite3 /var/lib/keystone/keystone.db
+</pre>
+<p>and rerun the demosetup's endpoint creation lines with the right IP value for "nova list" to work from other machines.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 42/1000000
+Post-expand include size: 690/2097152 bytes
+Template argument size: 329/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in stable version parser cache with key opensuse_en:stable-pcache:idhash:7945-0!1!0!!en!2 and timestamp 20130319221935 --><div class="printfooter">
+Retrieved from "<a href="SDB%253ACloud_OpenStack_Quickstart.html">http://en.opensuse.org/SDB:Cloud_OpenStack_Quickstart</a>"</div>
+
+        <div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="http://en.opensuse.org/Special:Categories" title="Special:Categories">Category</a>: <span dir='ltr'><a href="http://en.opensuse.org/Category:OpenStack" title="Category:OpenStack">OpenStack</a></span></div></div>                            <!-- End Content Area -->
+
+                </div>
+                <br/>
+
+                <div class="box-footer header-tabs">
+                    <ul>
+                                <li><a href="SDB%253ACloud_OpenStack_Quickstart.html" class="selected">SDB</a></li><li><a href="http://en.opensuse.org/SDB_Talk:Cloud_OpenStack_Quickstart" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li><li><a href="http://en.opensuse.org/index.php?title=SDB:Cloud_OpenStack_Quickstart&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li><a href="http://en.opensuse.org/index.php?title=SDB:Cloud_OpenStack_Quickstart&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                    </ul>
+                </div>
+
+            </div></div>
+
+        <!-- Note: this clears floating, set in previous elements -->
+        <div class="clear"></div>
+
+
+        <!-- Start: Footer -->
+                <!-- Start: included footer part -->
+<div id="footer" class="container_12">
+    <div id="footer-legal" class="border-top grid_12">
+        <p>This page has been accessed 7,096 times.</p><p>
+            &copy; 2011 Novell, Inc. and others.  All content  is made available under the terms
+            of the GNU Free Documentation License version 1.2 ("GFDL") unless expressly
+            otherwise indicated. | <a href="http://en.opensuse.org/Terms_of_site">Terms of site</a>
+        </p>
+    </div>
+</div>
+
+<!-- End: included footer part -->
+        <!-- End: Footer -->
+
+        
+<script src="load.php@debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=bentofluid&amp;%252A"></script>
+<script>if ( window.mediaWiki ) {
+	mediaWiki.config.set({"wgCanonicalNamespace": "SDB", "wgCanonicalSpecialPageName": false, "wgNamespaceNumber": 100, "wgPageName": "SDB:Cloud_OpenStack_Quickstart", "wgTitle": "Cloud OpenStack Quickstart", "wgAction": "view", "wgArticleId": 7945, "wgIsArticle": true, "wgUserName": null, "wgUserGroups": ["*"], "wgCurRevisionId": 58155, "wgCategories": ["OpenStack"], "wgBreakFrames": false, "wgRestrictionEdit": [], "wgRestrictionMove": [], "wgWikiEditorEnabledModules": {"toolbar": true, "dialogs": true, "templateEditor": false, "templates": false, "addMediaWizard": false, "preview": true, "previewDialog": false, "publish": false, "toc": false}, "wgFlaggedRevsParams": {"tags": {"accuracy": {"levels": 3, "quality": 2, "pristine": 4}, "depth": {"levels": 3, "quality": 1, "pristine": 4}, "style": {"levels": 3, "quality": 1, "pristine": 4}}}, "wgStableRevisionId": 58155, "wgRevContents": {"error": "Unable to get content.", "waiting": "Waiting for content"}, "sfgRemoveText": "Remove", "sfgAutocompleteOnAllChars": false, "sfgAutocompleteValues": {}, "sfgShowOnSelect": {}, "sfgFormErrorsHeader": "There were errors with your form input; see below", "sfgBlankErrorStr": "cannot be blank", "sfgBadURLErrorStr": "must have the correct URL format, starting with \"http\"", "sfgBadEmailErrorStr": "must have a valid email address format", "sfgBadNumberErrorStr": "must be a valid number", "sfgBadDateErrorStr": "must be a valid date", "sfgAnonEditWarning": "Warning: You are not logged in. Your IP address will be recorded in this page\'s edit history.", "egMapsDebugJS": false});
+}
+</script>
+<script>if ( window.mediaWiki ) {
+	mediaWiki.loader.load(["mediawiki.util", "mediawiki.legacy.wikibits", "mediawiki.legacy.ajax"]);
+	mediaWiki.loader.go();
+}
+</script>
+
+<script src="extensions/FlaggedRevs/client/flaggedrevs.js@87&amp;301"></script>
+<script>
+FlaggedRevs.messages = {"diffToggleShow": "show those changes", "diffToggleHide": "hide those changes", "logToggleShow": "show stability log", "logToggleHide": "hide stability log", "logDetailsShow": "show details", "logDetailsHide": "hide details", "toggleShow": "(+)", "toggleHide": "(-)"};
+</script>
+<script src="load.php@debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=bentofluid&amp;%252A"></script>
+<script>if ( window.mediaWiki ) {
+	mediaWiki.user.options.set({"ccmeonemails":0,"cols":80,"contextchars":50,"contextlines":5,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"bentofluid","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+	"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"wikieditor-preview":1,"flaggedrevssimpleui":1,"flaggedrevsstable":false,"flaggedrevseditdiffs":true,"flaggedrevsviewdiffs":false,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"searchNs101":false,"searchNs102":true,"searchNs103":false,"searchNs104":false,"searchNs105":false,"searchNs106":false,"searchNs107":false,"searchNs110":false,"searchNs111":false,"searchNs122":false,"searchNs123":false,"searchNs126":false,"searchNs127":false,"searchNs128":false,"searchNs129":false,
+	"searchNs420":false,"searchNs421":false});;mediaWiki.loader.state({"user.options":"ready"});
+}
+</script>        <!-- Served in 0.145 secs. -->
+    </body>
+</html>
+        

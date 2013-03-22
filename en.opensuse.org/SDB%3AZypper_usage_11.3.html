@@ -1,0 +1,1347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="generator" content="MediaWiki 1.17.0" />
+<link rel="shortcut icon" href="http://www.opensuse.org/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://en.opensuse.org/opensearch_desc.php" title="openSUSE (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://en.opensuse.org/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="openSUSE Atom feed" href="http://en.opensuse.org/index.php?title=Special:RecentChanges&amp;feed=atom" />        <title>SDB:Zypper usage 11.3 - openSUSE</title>
+        <link rel="stylesheet" href="load.php@debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint,shared&amp;only=styles&amp;skin=bentofluid&amp;%252A.css" />
+<link rel="stylesheet" href="http://static.opensuse.org/themes/bento/css/style.fluid.css" media="screen" />
+<link rel="stylesheet" href="extensions/FlaggedRevs/client/flaggedrevs.css@87.css" /><meta name="ResourceLoaderDynamicStyles" content="" /><link rel="stylesheet" href="load.php@debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=bentofluid&amp;%252A.css" />
+<link rel="stylesheet" href="load.php@debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=bentofluid&amp;%252A.css" />
+<link rel="stylesheet" href="load.php@debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=bentofluid&amp;%252A.css" />
+        <link rel="stylesheet" href="skins/bento/css_local/style.css" type="text/css" media="screen" />
+        <!--[if lt IE 7]>
+        <meta http-equiv="imagetoolbar" content="no" />
+        <![endif]-->
+        <script>if ( window.mediaWiki ) {
+	mediaWiki.config.set({"wgCanonicalNamespace": "SDB", "wgCanonicalSpecialPageName": false, "wgNamespaceNumber": 100, "wgPageName": "SDB:Zypper_usage_11.3", "wgTitle": "Zypper usage 11.3", "wgAction": "view", "wgArticleId": 5165, "wgIsArticle": true, "wgUserName": null, "wgUserGroups": ["*"], "wgCurRevisionId": 58559, "wgCategories": ["Pages to update", "Zypper", "SDB:11.3"], "wgBreakFrames": false, "wgRestrictionEdit": [], "wgRestrictionMove": [], "wgWikiEditorEnabledModules": {"toolbar": true, "dialogs": true, "templateEditor": false, "templates": false, "addMediaWizard": false, "preview": true, "previewDialog": false, "publish": false, "toc": false}, "wgFlaggedRevsParams": {"tags": {"accuracy": {"levels": 3, "quality": 2, "pristine": 4}, "depth": {"levels": 3, "quality": 1, "pristine": 4}, "style": {"levels": 3, "quality": 1, "pristine": 4}}}, "wgStableRevisionId": 54173, "wgRevContents": {"error": "Unable to get content.", "waiting": "Waiting for content"}, "sfgRemoveText": "Remove", "sfgAutocompleteOnAllChars": false, "sfgAutocompleteValues": {}, "sfgShowOnSelect": {}, "sfgFormErrorsHeader": "There were errors with your form input; see below", "sfgBlankErrorStr": "cannot be blank", "sfgBadURLErrorStr": "must have the correct URL format, starting with \"http\"", "sfgBadEmailErrorStr": "must have a valid email address format", "sfgBadNumberErrorStr": "must be a valid number", "sfgBadDateErrorStr": "must be a valid date", "sfgAnonEditWarning": "Warning: You are not logged in. Your IP address will be recorded in this page\'s edit history.", "egMapsDebugJS": false});
+}
+</script>        <script type="text/javascript" src="skins/common/wikibits.js@301"><!-- wikibits js --></script>
+        <script type="text/javascript" src="http://static.opensuse.org/stage/themes/bento/js/jquery.js"></script>
+        <script type="text/javascript" src="http://static.opensuse.org/stage/themes/bento/js/script.js"></script>
+        <script type="text/javascript" src="skins/bento/js_local/script.js"></script>
+        <script type="text/javascript" src="skins/bento/js_local/search.js"></script>
+
+        <script type="text/javascript" src="http://static.opensuse.org/themes/bento/js/l10n/global-navigation-data-en.js"></script>
+        <script type="text/javascript" src="http://static.opensuse.org/themes/bento/js/global-navigation.js"></script>
+
+        <link rel="icon" type="image/png" href="http://static.opensuse.org/themes/bento/images/favicon.png" />
+
+        <!-- Head Scripts -->
+                <script src="extensions/FlaggedRevs/client/flaggedrevs.js@87&amp;301"></script>
+<script>
+FlaggedRevs.messages = {"diffToggleShow": "show those changes", "diffToggleHide": "hide those changes", "logToggleShow": "show stability log", "logToggleHide": "hide stability log", "logDetailsShow": "show details", "logDetailsHide": "hide details", "toggleShow": "(+)", "toggleHide": "(-)"};
+</script>
+		<link rel="alternate" type="application/rdf+xml" title="SDB:Zypper usage 11.3" href="http://en.opensuse.org/index.php?title=Special:ExportRDF/SDB:Zypper_usage_11.3&amp;xmlmime=rdf" />
+                                                                        
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      (function(){
+        var u=(("https:" == document.location.protocol) ? "https://beans.opensuse.org/piwik/" : "http://beans.opensuse.org/piwik/");
+        _paq.push(['setSiteId', 9]);
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['trackPageView']);
+        _paq.push([ 'setDomains', ["*.opensuse.org"]]);
+        var d=document,
+        g=d.createElement('script'),
+        s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript';
+        g.defer=true;
+        g.async=true;
+        g.src=u+'piwik.js';
+        s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Piwik Code -->
+
+
+    </head>
+
+    <body                                                               class="mediawiki ltr ns-100 ns-subject page-SDB_Zypper_usage_11_3 skin-bentofluid">
+
+        <!-- Start: Header -->
+                  <!-- Start: Header -->
+  <div id="header">
+    <div id="header-content" class="container_12">
+      <a id="header-logo" href="http://www.opensuse.org"><img src="skins/bento/header-logo.png" width="46" height="26" alt="Header Logo" /></a>
+      <ul id="global-navigation">
+        <li id="item-downloads"><a href="http://en.opensuse.org/openSUSE:Browse#Downloads">Downloads</a></li>
+        <li id="item-support"><a href="http://en.opensuse.org/openSUSE:Browse#Support">Support</a></li>
+        <li id="item-community"><a href="http://en.opensuse.org/openSUSE:Browse#Community">Community</a></li>
+        <li id="item-development"><a href="http://en.opensuse.org/openSUSE:Browse#Development">Development</a></li>
+      </ul>
+      <form id="global-search-form" action="http://en.opensuse.org/Special:Search" method="post" accept-charset="utf-8">
+        <label for="search">Search</label>
+        <input type="text" name="search" value="" id="search" />
+        <input type="submit" name="go" class="hidden"  value="Search"  title="Go to a page with this exact name if exists"/>
+      </form>
+    </div>
+  </div>
+  <!-- End: Header -->
+        <!-- End: Header -->
+
+        <div id="subheader" class="container_16">
+            <div id="breadcrump" class="grid_12 alpha">
+                <a href="http://en.opensuse.org/" title="Home"><img src="skins/bento/home_grey.png" width="16" height="16" alt="Home" /> Wiki</a> &gt; <a href="SDB%253AZypper_usage_11.3.html" title="">SDB:Zypper usage 11.3</a>
+            </div>
+
+
+                    <div id="login-wrapper" class="grid_4 omega">
+                <a href="http://en.opensuse.org/index.php?title=Special:UserLogin&amp;returnto=SDB:Zypper_usage_11.3">Sign up</a> | <a id="login-trigger" href="SDB%253AZypper_usage_11.3.html#login">Login</a>
+
+                <div id="login-form">
+		                        <form action="https://login.attachmategroup.com/nidp/idff/sso?sid=0" method="post" enctype="application/x-www-form-urlencoded" name="login_form">
+                    		    <input name="target" value="http://en.opensuse.org/index.php?title=Special:UserLogin&returnto=SDB:Zypper_usage_11.3" type="hidden"/>
+                        <input name="context" value="default" type="hidden"/>
+                        <input name="proxypath" value="reverse" type="hidden"/>
+                        <input name="message" value="Please log In" type="hidden"/>
+                        <p><label class="inlined" for="username">Username</label><input type="text" class="inline-text" name="Ecom_User_ID" value="" id="username" /></p>
+                        <p><label class="inlined" for="password">Password</label><input type="password" class="inline-text" name="Ecom_Password" value="" id="password" /></p>
+                        <p><input type="submit" value="Login" /></p>
+                        <p class="slim-footer"><a id="close-login" href="SDB%253AZypper_usage_11.3.html#cancel">Cancel</a></p>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Start: Main Content Area -->
+        <div id="content" class="container_16 content-wrapper">
+
+            <div class="column grid_3 alpha">
+
+               <!-- Begin custom navigation -->
+                              <div id="some_other_content" class="box box-shadow alpha clear-both navigation">
+               <h2 class="box-header">
+                  Navigation               </h2>
+                 <ul class="navigation">
+                                    <li><a href="http://en.opensuse.org/Portal:Project">Project</a></li>
+                                    <li><a href="http://en.opensuse.org/Portal:Distribution">Distribution</a></li>
+                                    <li><a href="http://en.opensuse.org/Portal:Support">Support</a></li>
+                                    <li><a href="http://en.opensuse.org/openSUSE:Communication_channels">Contact</a></li>
+                                    <li><a href="http://en.opensuse.org/openSUSE:Category_browse">Site map</a></li>
+                                   </ul>          
+               </div>
+                              <div id="some_other_content" class="box box-shadow alpha clear-both navigation">
+               <h2 class="box-header">
+                  Help               </h2>
+                 <ul class="navigation">
+                                    <li><a href="http://en.opensuse.org/Portal:Wiki">Wiki</a></li>
+                                    <li><a href="http://en.opensuse.org/Help:Concept">Create a Page</a></li>
+                                    <li><a href="http://en.opensuse.org/Help:Editing">Change a Page</a></li>
+                                    <li><a href="http://en.opensuse.org/Help:Search">Find a Page</a></li>
+                                   </ul>          
+               </div>
+               
+
+                <div id="some_other_content" class="box box-shadow alpha clear-both navigation">
+                    <h2 class="box-header">Toolbox</h2>
+                    <ul class="navigation">
+                                <li id="t-whatlinkshere"><a href="http://en.opensuse.org/Special:WhatLinksHere/SDB:Zypper_usage_11.3" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+                                    <li id="t-recentchangeslinked"><a href="http://en.opensuse.org/Special:RecentChangesLinked/SDB:Zypper_usage_11.3" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+                
+                                                                                                <li id="t-specialpages"><a href="http://en.opensuse.org/Special:SpecialPages">Special pages</a></li>
+                                    </ul>
+                </div>
+
+                <div id="some_other_content" class="box box-shadow alpha clear-both navigation">
+                    <h2 class="box-header">Sponsors</h2>
+                                        <a class="sponsor-image" href="http://en.opensuse.org/Sponsors"><img src="http://static.opensuse.org/themes/bento/images/sponsors/sponsor_b1-systems.png" alt="Sponsor" style="max-width: 145px;"/></a>
+                </div>
+
+
+                        <div id="language_box" class="box box-shadow alpha clear-both navigation">
+                    <h2 class="box-header">In other languages</h2>
+                    <ul class="navigation">
+                                    <li><a href='http://fr.opensuse.org/SDB:Zypper_usage'>Français</a></li>
+                                                        <li><a href='http://zh.opensuse.org/SDB:Zypper_%E7%94%A8%E6%B3%95'>中文</a></li>
+                                                        <li><a href='http://it.opensuse.org/SDB:Zypper_usage_11.3'>Italiano</a></li>
+                                                        <li><a href='http://ru.opensuse.org/SDB:Zypper_%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_11.3'>Русский</a></li>
+                                                    </ul>
+                </div>
+            
+
+            </div>
+
+
+                        
+
+            <div id="some-content" class="box box-shadow grid_13 clearfix">
+                <!-- box header -->
+                <div class="box-header header-tabs">
+                    <ul>
+                                <li><a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;stable=1" class="selected">SDB</a></li><li><a href="http://en.opensuse.org/index.php?title=SDB_Talk:Zypper_usage_11.3&amp;action=edit&amp;redlink=1" class="new" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li><li><a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;stable=0&amp;redirect=no" class="collapsible" title="View this page with the pending changes [v]" accesskey="v">Pending changes</a></li><li><a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li><a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                    </ul>
+                </div>
+                <div id="contentSub"><div id="mw-fr-revisiontag" class="flaggedrevs_short plainlinks noprint" onMouseOut="FlaggedRevs.onBoxMouseOut(event)"><div class="flaggedrevs_short_basic"><img class="flaggedrevs-icon" src="extensions/FlaggedRevs/client/img/3.png" alt="This is a quality version of this page" title="This is a quality version of this page" /><img id="mw-fr-revisiontoggle" class="fr-toggle-arrow" src="extensions/FlaggedRevs/client/img/arrow-down.png" style="display:none;" onMouseOver="FlaggedRevs.onBoxMouseOver()" alt="show/hide details" /></div>
+<div id="mw-fr-revisiondetails-wrapper" style="position:relative;"><div id="mw-fr-revisiondetails" class="flaggedrevs_short_details" style="display:none">This is the <a href="http://en.opensuse.org/Help:Page_validation" title="Help:Page validation">stable version</a>, <a href="http://en.opensuse.org/index.php?title=Special:Log&amp;type=review&amp;page=SDB:Zypper_usage_11.3" class="external text" rel="nofollow">approved</a> on <i>17 September 2012</i>.
+There are <a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;oldid=54173&amp;diff=cur&amp;diffonly=0" class="external text" rel="nofollow">2 pending changes</a> awaiting review.<p><table id='mw-fr-revisionratings-box' align='center' class='flaggedrevs-color-2' cellpadding='0'><tr><td class='fr-text' valign='middle'>Accuracy</td><td class='fr-value60' valign='middle'>Accurate</td></tr>
+<tr><td class='fr-text' valign='middle'>Depth</td><td class='fr-value60' valign='middle'>Moderate</td></tr>
+<tr><td class='fr-text' valign='middle'>Readability</td><td class='fr-value60' valign='middle'>Good</td></tr>
+</table></p></div>
+</div>
+</div>
+</div>
+                <!-- End: box header -->
+
+
+                <a name="top" id="top"></a>
+
+                <div class="alpha omega">
+                    <h1>SDB:Zypper usage 11.3</h1>
+
+                    <h3 id="siteSub">tagline: From openSUSE</h3>
+                    <!-- <div id="contentSub"><div id="mw-fr-revisiontag" class="flaggedrevs_short plainlinks noprint" onMouseOut="FlaggedRevs.onBoxMouseOut(event)"><div class="flaggedrevs_short_basic"><img class="flaggedrevs-icon" src="/extensions/FlaggedRevs/client/img/3.png" alt="This is a quality version of this page" title="This is a quality version of this page" /><img id="mw-fr-revisiontoggle" class="fr-toggle-arrow" src="/extensions/FlaggedRevs/client/img/arrow-down.png" style="display:none;" onMouseOver="FlaggedRevs.onBoxMouseOver()" alt="show/hide details" /></div>
+<div id="mw-fr-revisiondetails-wrapper" style="position:relative;"><div id="mw-fr-revisiondetails" class="flaggedrevs_short_details" style="display:none">This is the <a href="/Help:Page_validation" title="Help:Page validation">stable version</a>, <a href="http://en.opensuse.org/index.php?title=Special:Log&amp;type=review&amp;page=SDB:Zypper_usage_11.3" class="external text" rel="nofollow">approved</a> on <i>17 September 2012</i>.
+There are <a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;oldid=54173&amp;diff=cur&amp;diffonly=0" class="external text" rel="nofollow">2 pending changes</a> awaiting review.<p><table id='mw-fr-revisionratings-box' align='center' class='flaggedrevs-color-2' cellpadding='0'><tr><td class='fr-text' valign='middle'>Accuracy</td><td class='fr-value60' valign='middle'>Accurate</td></tr>
+<tr><td class='fr-text' valign='middle'>Depth</td><td class='fr-value60' valign='middle'>Moderate</td></tr>
+<tr><td class='fr-text' valign='middle'>Readability</td><td class='fr-value60' valign='middle'>Good</td></tr>
+</table></p></div>
+</div>
+</div>
+</div> -->
+                                    
+                    <!-- Begin Content Area -->
+                            <table style="width:95%;background:#DEE1FF; border:2px solid #6699CC" cellpadding="5px" cellspacing="0">
+
+<tr>
+<td style="width:36px; vertical-align: middle;"><img alt="Icon-update.png" src="images/thumb/b/b4/Icon-update.png/32px-Icon-update.png" width="32" height="32" />
+</td>
+<td style="vertical-align: middle;"><span style="font-weight: bold; padding:.2em .5em .4em 0em;"><u>Update to version:</u> 11.4</span><br /><span style="padding:.2em .5em .4em 0em;">This article needs to be tested for a newer version. If you are using this guide on the newer version and you find the guide up-to-date to this version, please add the version number to the <b>Knowledge</b> bar. Please refer to <a href="http://en.opensuse.org/Help:Version_related_jobs#SDB_pages" title="Help:Version related jobs">version related jobs: SDB pages</a> for more information.</span>
+</td></tr></table>
+<p>A new (updated) page for 11.4 without deleting/changing the 11.3 version may be the best solution, or? Maybe with exporting this page and importing it to <a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.4&amp;action=edit&amp;redlink=1" class="new" title="SDB:Zypper usage 11.4 (page does not exist)">SDB:Zypper_usage_11.4</a> before editing it? --<a href="http://en.opensuse.org/User:Pistazienfresser" title="User:Pistazienfresser">Pistazienfresser</a> 09:51, 17 March 2011 (MDT)
+</p>
+<div class="box" style="margin:0 0 1em 1em;width:97%;"><div class="box-header" style="text-indent:.5em;font-size:120%;"><b><a href="http://en.opensuse.org/Portal:Zypper" title="Portal:Zypper">Zypper</a></b></div><div style="margin:0 0 0 0;padding:0 .5em 0 .5em;"><strong class="selflink">Usage</strong> - <a href="http://en.opensuse.org/SDB:Zypper_troubleshooting" title="SDB:Zypper troubleshooting">Troubleshooting</a> - <a href="http://en.opensuse.org/openSUSE:Zypper_versions" title="openSUSE:Zypper versions">Versions</a> - <a href="http://en.opensuse.org/openSUSE:Zypper_features" title="openSUSE:Zypper features">Features</a> - <a href="http://en.opensuse.org/openSUSE:Zypper_development" title="openSUSE:Zypper development">Development</a> -  <a href="http://en.opensuse.org/openSUSE:Zypper_roadmap" title="openSUSE:Zypper roadmap">Roadmap</a> - <a href="http://en.opensuse.org/openSUSE:Zypper_bugs_for_adoption" title="openSUSE:Zypper bugs for adoption">Bugs for adoption</a> -  <a href="http://en.opensuse.org/openSUSE:Zypper_team" title="openSUSE:Zypper team">Team</a></div></div>
+<div class="intro-wrapper"><div class="intro">This article is about how to use <a href="http://en.opensuse.org/Portal:Zypper" title="Portal:Zypper">Zypper</a>, the command line package manager using the <a href="http://en.opensuse.org/Portal:Libzypp" title="Portal:Libzypp">Libzypp</a> library. It contains complementary information to Zypper's <a href="http://en.opensuse.org/SDB:Manual_pages" title="SDB:Manual pages">manual page</a> (with <tt>man zypper</tt>). What you can't find here, you should find in the man page and vice versa.
+</div></div>
+<div style="background:#fefefe; padding:0 1em 0 1.1em;margin: .5em 0 .5em 0;">
+<div style="border-left:.5em solid #669900;padding:.2em .5em .4em 1em;"><span style="font-weight: bold; color:#669900; padding:.2em .5em .4em 0em;"><u>Version:</u> 11.3</span><span style="padding:.2em .5em .4em 0em;">This article is about zypper 1.4.5 as it appeared in <a href="http://en.opensuse.org/Portal:11.3" title="Portal:11.3">openSUSE 11.3</a>. For other versions see <a href="http://en.opensuse.org/openSUSE:Zypper_versions" title="openSUSE:Zypper versions">Zypper versions</a>.</span>
+</div></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="SDB%253AZypper_usage_11.3.html#Quick_reference"><span class="tocnumber">1</span> <span class="toctext">Quick reference</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="SDB%253AZypper_usage_11.3.html#Cheat_sheet"><span class="tocnumber">1.1</span> <span class="toctext">Cheat sheet</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="SDB%253AZypper_usage_11.3.html#General_usage"><span class="tocnumber">2</span> <span class="toctext">General usage</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="SDB%253AZypper_usage_11.3.html#User_prompts"><span class="tocnumber">2.1</span> <span class="toctext">User prompts</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="SDB%253AZypper_usage_11.3.html#Vocabulary"><span class="tocnumber">3</span> <span class="toctext">Vocabulary</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="SDB%253AZypper_usage_11.3.html#Commands"><span class="tocnumber">4</span> <span class="toctext">Commands</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="SDB%253AZypper_usage_11.3.html#Printing_help"><span class="tocnumber">4.1</span> <span class="toctext">Printing help</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="SDB%253AZypper_usage_11.3.html#Repository_management"><span class="tocnumber">4.2</span> <span class="toctext">Repository management</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="SDB%253AZypper_usage_11.3.html#Listing_defined_repositories"><span class="tocnumber">4.2.1</span> <span class="toctext">Listing defined repositories</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="SDB%253AZypper_usage_11.3.html#Adding_repositories"><span class="tocnumber">4.2.2</span> <span class="toctext">Adding repositories</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="SDB%253AZypper_usage_11.3.html#Refreshing_repositories"><span class="tocnumber">4.2.3</span> <span class="toctext">Refreshing repositories</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="SDB%253AZypper_usage_11.3.html#Removing_repositories"><span class="tocnumber">4.2.4</span> <span class="toctext">Removing repositories</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="SDB%253AZypper_usage_11.3.html#Modifying_repositories"><span class="tocnumber">4.2.5</span> <span class="toctext">Modifying repositories</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="SDB%253AZypper_usage_11.3.html#Renaming_repositories"><span class="tocnumber">4.2.6</span> <span class="toctext">Renaming repositories</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="SDB%253AZypper_usage_11.3.html#Export.2FImport_repositories"><span class="tocnumber">4.2.7</span> <span class="toctext">Export/Import repositories</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-16"><a href="SDB%253AZypper_usage_11.3.html#Service_management"><span class="tocnumber">4.3</span> <span class="toctext">Service management</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="SDB%253AZypper_usage_11.3.html#Package_management"><span class="tocnumber">4.4</span> <span class="toctext">Package management</span></a>
+<ul>
+<li class="toclevel-3 tocsection-18"><a href="SDB%253AZypper_usage_11.3.html#Selecting_packages"><span class="tocnumber">4.4.1</span> <span class="toctext">Selecting packages</span></a></li>
+<li class="toclevel-3 tocsection-19"><a href="SDB%253AZypper_usage_11.3.html#Installing_packages"><span class="tocnumber">4.4.2</span> <span class="toctext">Installing packages</span></a></li>
+<li class="toclevel-3 tocsection-20"><a href="SDB%253AZypper_usage_11.3.html#Removing_packages"><span class="tocnumber">4.4.3</span> <span class="toctext">Removing packages</span></a></li>
+<li class="toclevel-3 tocsection-21"><a href="SDB%253AZypper_usage_11.3.html#Source_packages_and_build_dependencies"><span class="tocnumber">4.4.4</span> <span class="toctext">Source packages and build dependencies</span></a></li>
+<li class="toclevel-3 tocsection-22"><a href="SDB%253AZypper_usage_11.3.html#Updating_packages"><span class="tocnumber">4.4.5</span> <span class="toctext">Updating packages</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-23"><a href="SDB%253AZypper_usage_11.3.html#Querying"><span class="tocnumber">4.5</span> <span class="toctext">Querying</span></a>
+<ul>
+<li class="toclevel-3 tocsection-24"><a href="SDB%253AZypper_usage_11.3.html#Searching_packages"><span class="tocnumber">4.5.1</span> <span class="toctext">Searching packages</span></a></li>
+<li class="toclevel-3 tocsection-25"><a href="SDB%253AZypper_usage_11.3.html#Obtaining_information_about_packages"><span class="tocnumber">4.5.2</span> <span class="toctext">Obtaining information about packages</span></a></li>
+<li class="toclevel-3 tocsection-26"><a href="SDB%253AZypper_usage_11.3.html#Dependencies"><span class="tocnumber">4.5.3</span> <span class="toctext">Dependencies</span></a></li>
+<li class="toclevel-3 tocsection-27"><a href="SDB%253AZypper_usage_11.3.html#Other_queries"><span class="tocnumber">4.5.4</span> <span class="toctext">Other queries</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-28"><a href="SDB%253AZypper_usage_11.3.html#Package_locks"><span class="tocnumber">4.6</span> <span class="toctext">Package locks</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="SDB%253AZypper_usage_11.3.html#Utilities"><span class="tocnumber">4.7</span> <span class="toctext">Utilities</span></a>
+<ul>
+<li class="toclevel-3 tocsection-30"><a href="SDB%253AZypper_usage_11.3.html#Verify_dependencies"><span class="tocnumber">4.7.1</span> <span class="toctext">Verify dependencies</span></a></li>
+<li class="toclevel-3 tocsection-31"><a href="SDB%253AZypper_usage_11.3.html#Install_new_recommended_packages"><span class="tocnumber">4.7.2</span> <span class="toctext">Install new recommended packages</span></a></li>
+<li class="toclevel-3 tocsection-32"><a href="SDB%253AZypper_usage_11.3.html#Check_processes"><span class="tocnumber">4.7.3</span> <span class="toctext">Check processes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-33"><a href="SDB%253AZypper_usage_11.3.html#Update_management"><span class="tocnumber">4.8</span> <span class="toctext">Update management</span></a>
+<ul>
+<li class="toclevel-3 tocsection-34"><a href="SDB%253AZypper_usage_11.3.html#Listing_needed_patches"><span class="tocnumber">4.8.1</span> <span class="toctext">Listing needed patches</span></a></li>
+<li class="toclevel-3 tocsection-35"><a href="SDB%253AZypper_usage_11.3.html#Applying_patches"><span class="tocnumber">4.8.2</span> <span class="toctext">Applying patches</span></a></li>
+<li class="toclevel-3 tocsection-36"><a href="SDB%253AZypper_usage_11.3.html#Listing_all_patches"><span class="tocnumber">4.8.3</span> <span class="toctext">Listing all patches</span></a></li>
+<li class="toclevel-3 tocsection-37"><a href="SDB%253AZypper_usage_11.3.html#Checking_patches"><span class="tocnumber">4.8.4</span> <span class="toctext">Checking patches</span></a></li>
+<li class="toclevel-3 tocsection-38"><a href="SDB%253AZypper_usage_11.3.html#Getting_information_about_patches"><span class="tocnumber">4.8.5</span> <span class="toctext">Getting information about patches</span></a></li>
+<li class="toclevel-3 tocsection-39"><a href="SDB%253AZypper_usage_11.3.html#Package_updates"><span class="tocnumber">4.8.6</span> <span class="toctext">Package updates</span></a></li>
+<li class="toclevel-3 tocsection-40"><a href="SDB%253AZypper_usage_11.3.html#Distribution_upgrade"><span class="tocnumber">4.8.7</span> <span class="toctext">Distribution upgrade</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-41"><a href="SDB%253AZypper_usage_11.3.html#Using_zypper_in_scripts_and_applications"><span class="tocnumber">5</span> <span class="toctext">Using zypper in scripts and applications</span></a>
+<ul>
+<li class="toclevel-2 tocsection-42"><a href="SDB%253AZypper_usage_11.3.html#Non_interactive_mode"><span class="tocnumber">5.1</span> <span class="toctext">Non interactive mode</span></a></li>
+<li class="toclevel-2 tocsection-43"><a href="SDB%253AZypper_usage_11.3.html#No_GPG_checks_mode"><span class="tocnumber">5.2</span> <span class="toctext">No GPG checks mode</span></a></li>
+<li class="toclevel-2 tocsection-44"><a href="SDB%253AZypper_usage_11.3.html#Auto-agree_with_licenses"><span class="tocnumber">5.3</span> <span class="toctext">Auto-agree with licenses</span></a></li>
+<li class="toclevel-2 tocsection-45"><a href="SDB%253AZypper_usage_11.3.html#Quiet_output"><span class="tocnumber">5.4</span> <span class="toctext">Quiet output</span></a></li>
+<li class="toclevel-2 tocsection-46"><a href="SDB%253AZypper_usage_11.3.html#XML_output"><span class="tocnumber">5.5</span> <span class="toctext">XML output</span></a></li>
+<li class="toclevel-2 tocsection-47"><a href="SDB%253AZypper_usage_11.3.html#Prompts"><span class="tocnumber">5.6</span> <span class="toctext">Prompts</span></a>
+<ul>
+<li class="toclevel-3 tocsection-48"><a href="SDB%253AZypper_usage_11.3.html#GPG-related_prompts"><span class="tocnumber">5.6.1</span> <span class="toctext">GPG-related prompts</span></a></li>
+<li class="toclevel-3 tocsection-49"><a href="SDB%253AZypper_usage_11.3.html#Other_prompts"><span class="tocnumber">5.6.2</span> <span class="toctext">Other prompts</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-50"><a href="SDB%253AZypper_usage_11.3.html#Compatibility_with_Rug"><span class="tocnumber">6</span> <span class="toctext">Compatibility with Rug</span></a></li>
+<li class="toclevel-1 tocsection-51"><a href="SDB%253AZypper_usage_11.3.html#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+</ul>
+</td></tr></table>
+<p><br />
+</p>
+<h2><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=1" title="Edit section: Quick reference">edit</a>]</span> <span class="mw-headline" id="Quick_reference">Quick reference</span></h2>
+<p>This is what you will probably use most frequently.
+</p>
+<pre>zypper                 # to print the list of available global options and commands
+zypper help search     # to print help for the <i>search</i> command
+zypper lp              # to see what patch updates are needed
+zypper patch           # to apply the needed patches
+zypper se sqlite       # to search for sqlite
+zypper rm sqlite2      # to remove sqlite2
+zypper in sqlite3      # to install sqlite3
+zypper in yast*        # to install all packages matching 'yast*'
+zypper up              # to update all installed packages with newer versions, where possible
+</pre>
+<h3><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=2" title="Edit section: Cheat sheet">edit</a>]</span> <span class="mw-headline" id="Cheat_sheet"> Cheat sheet </span></h3>
+<p>Here you can find the information displayed on this page, but compressed in the format of a cheat sheet. It also includes a few references taken from the man pages. It is recommended for use after you have analyzed the info displayed here.
+</p>
+<table>
+
+<tr>
+<td><a href="http://en.opensuse.org/images/archive/1/17/20121214224042%21Zypper-cheat-sheet-1.pdf" class="internal" title="Zypper-cheat-sheet-1.pdf">First page A4</a>.
+</td></tr>
+<tr>
+<td><a href="http://en.opensuse.org/images/archive/3/30/20121214232704%21Zypper-cheat-sheet-2.pdf" class="internal" title="Zypper-cheat-sheet-2.pdf">Second page A4</a>.
+</td></tr>
+<tr>
+<td><a href="http://en.opensuse.org/images/archive/8/85/20121214224842%21Zypper-cheat-sheet-1-letter.pdf" class="internal" title="Zypper-cheat-sheet-1-letter.pdf">First page letter</a>.
+</td></tr>
+<tr>
+<td><a href="http://en.opensuse.org/images/archive/7/76/20121214232750%21Zypper-cheat-sheet-2-letter.pdf" class="internal" title="Zypper-cheat-sheet-2-letter.pdf">Second page letter</a>.
+</td></tr>
+</table>
+<hr />
+<h2><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=3" title="Edit section: General usage">edit</a>]</span> <span class="mw-headline" id="General_usage">General usage</span></h2>
+<p>The general syntax of zypper is:
+</p>
+<div class="shell"># zypper [global-options] command [command-options] [arguments] ... </div>
+<p>The components enclosed in brackets are not required, thus the simplest way to execute zypper is to type its name followed by a <a href="SDB%253AZypper_usage_11.3.html#Commands">command</a>. For example, to apply needed patches to the system type:
+</p>
+<div class="shell"># zypper patch</div>
+<p>Additionally, you can choose from one or more <a href="SDB%253AZypper_usage_11.3.html#Global_Options">global options</a> by typing them just before the command: (run the command, but don't ask me anything, decide on your own)
+</p>
+<div class="shell"># zypper --non-interactive patch</div>
+<p>To use the options specific to particular command, type them right after the command: (apply needed patches to the system but don't ask me to confirm any licenses, i've read them all before)
+</p>
+<div class="shell"># zypper patch --auto-agree-with-licenses</div>
+<p>Some of the commands require one or more arguments: (install or update mplayer package)
+</p>
+<div class="shell"># zypper install mplayer</div>
+<p>Some of the options also require an argument: (search for patterns)
+</p>
+<div class="shell"># zypper search -t pattern</div>
+<p>All of the above combined: (install mplayer and amarok by using the factory repository only, be verbose)
+</p>
+<div class="shell"># zypper -v install --repo factory mplayer amarok</div>
+<h3><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=4" title="Edit section: User prompts">edit</a>]</span> <span class="mw-headline" id="User_prompts">User prompts</span></h3>
+<p>Whenever zypper needs some input from you, it lists possible answers in brackets next to the prompt text. To choose the default answer, just press &lt;enter&gt; (the default answer is printed in capitals (with the exception of non-ascii characters)). Some prompts also have help available, in which case there is a question mark '?' listed as a possible answer. To make zypper use the default answers without user interaction, use the <a href="SDB%253AZypper_usage_11.3.html#Non_Interactive_Mode">--non-interactive</a> global option.
+</p>
+<hr />
+<h2><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=5" title="Edit section: Vocabulary">edit</a>]</span> <span class="mw-headline" id="Vocabulary">Vocabulary</span></h2>
+<ul><li> <b>repository</b> - local or remote directory containing packages and various package information (package metadata). Repositories were formerly known as <i>installation sources</i> , <i>services</i> or <i>catalogs</i>).
+</li><li> <b>alias</b> - repository alias is a short version of repository name for use in repository handling commands and options as <tt>removerepo</tt> or <tt>--repo</tt>.
+</li><li> <b>package</b> - software package (RPM package, source package). Patches, patterns, and products are also commonly referred to as different types of <i>packages</i>.
+</li><li> <b>patch</b> - represents a package or a group of packages needed to install an update (a bug fix mostly).
+</li><li> <b>pattern</b> - represents a group of packages. For example an <i>Http Server</i> pattern would have the dependencies defined so that all packages needed to run and manage an http server would have been triggered for installation when upon installing the pattern.
+</li><li> <b>product</b> - represents the whole product (e.g. 'openSUSE 11.1').
+</li></ul>
+<hr />
+<h2><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=6" title="Edit section: Commands">edit</a>]</span> <span class="mw-headline" id="Commands">Commands</span></h2>
+<p>zypper provides a number of commands which can be grouped into the following categories:
+</p>
+<ul><li> <b>repository management</b><br /><tt>refresh, repos, addrepo, removerepo, modifyrepo, namerepo</tt><br /><tt>refresh-services, services, addservice, removeservice, modifyservice</tt>
+</li><li> <b>package management</b><br /><tt>install, remove, source-install</tt>
+</li><li> <b>update management</b><br /><tt>patch, list-patches, patch-check, patches, update, list-updates, dist-upgrade</tt>
+</li><li> <b>querying</b><br /><tt>search, info, what-provides, list-updates, patch-check, patches, packages, patterns, products</tt>
+</li><li> <b>locking</b><br /><tt>locks, addlock, removelock, cleanlocks</tt>
+</li><li> <b>utilities</b><br /><tt>verify, install-new-recommends</tt>
+</li><li> <b>other</b><br /><tt>help, licenses, versioncmp, targetos</tt>
+</li></ul>
+<h3><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=7" title="Edit section: Printing help">edit</a>]</span> <span class="mw-headline" id="Printing_help">Printing help</span></h3>
+<p>First, it is good to know how to get help. To print general help (list of commands and global options), just type <tt>zypper</tt> without any option or arguments. To print help for specific command, use:
+</p>
+<div class="shell"># zypper help [command]</div>
+<p>To obtain specific help for a command, use:
+</p>
+<div class="shell"># zypper [command] --help</div>
+<p>Note that using <tt>-h</tt> instead of <tt>--help</tt> is also possible for convenience.
+</p>
+<h3><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=8" title="Edit section: Repository management">edit</a>]</span> <span class="mw-headline" id="Repository_management">Repository management</span></h3>
+<p>You can specify existing repositories by their number in the list produced by <tt>zypper lr</tt>, alias, or URI. When using the numbers, make sure you always check <tt>zypper lr</tt> first, as the numbers may change after you made some changes to the repositories.
+</p>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=9" title="Edit section: Listing defined repositories">edit</a>]</span> <span class="mw-headline" id="Listing_defined_repositories">Listing defined repositories</span></h4>
+<p><b>repos</b> or <b>lr</b>
+</p><p>Example output:
+</p>
+<div class="shell">$ zypper lr</div>
+<pre>
+# | Alias                 | Name                  | Enabled | Refresh
+--+-----------------------+-----------------------+---------+--------
+1 | packman               | Packman 11.1          | Yes     | No
+2 | fate                  | fate                  | No      | No
+3 | openSUSE-11.1-Updates | Updates for 11.1      | Yes     | Yes
+4 | repo-oss              | openSUSE-11.1-Oss     | Yes     | No
+5 | repo-non-oss          | openSUSE-11.1-Non-Oss | Yes     | No
+6 | repo-debug            | openSUSE-11.1-Debug   | No      | No
+</pre>
+<pre>
+# zypper lr 5 4
+Alias         &#160;: openSUSE-11.3-Non-Oss
+Name          &#160;: openSUSE-11.3-Non-Oss
+URI           &#160;: http://download.opensuse.org/distribution/11.3/repo/non-oss/
+Enabled       &#160;: Yes
+Priority      &#160;: 99
+Auto-refresh  &#160;: Off
+Keep Packages &#160;: Off
+Type          &#160;: yast2                                                       
+GPG Check     &#160;: On
+GPG Key URI   &#160;: 
+Path Prefix   &#160;: /
+Parent Service&#160;: 
+MD Cache Path &#160;: /var/cache/zypp/raw/openSUSE-11.3-Non-Oss
+
+Alias         &#160;: openSUSE-11.3-Oss
+Name          &#160;: openSUSE-11.3-Oss
+URI           &#160;: http://download.opensuse.org/distribution/11.3/repo/oss/
+Enabled       &#160;: Yes
+Priority      &#160;: 99
+Auto-refresh  &#160;: Off
+Keep Packages &#160;: Off 
+Type          &#160;: yast2
+GPG Check     &#160;: On
+GPG Key URI   &#160;:   
+Path Prefix   &#160;: /
+Parent Service&#160;:
+MD Cache Path &#160;: /var/cache/zypp/raw/openSUSE-11.3-Oss
+</pre>                                                                       
+<p>Other examples:
+</p>
+<pre>
+zypper lr -u       # to include also repo URI in the table
+zypper lr -d       # to include several other repo properties in the table
+zypper lr -P       # to include also repo priority and sort the list by it
+zypper lr -e my    # export all repository definitions into file named 'my.repo'
+</pre>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=10" title="Edit section: Adding repositories">edit</a>]</span> <span class="mw-headline" id="Adding_repositories">Adding repositories</span></h4>
+<p><b>addrepo</b> or <b>ar</b>
+</p><p>Before any packages can be installed at least one <b>repository</b> must be defined. To add a repository, use the <tt>addrepo</tt> command:
+</p><p>Example output:
+</p>
+<div class="shell"># zypper ar <a href="http://download.videolan.org/pub/vlc/SuSE/11.1" class="external free" rel="nofollow">http://download.videolan.org/pub/vlc/SuSE/11.1</a> vlc</div>
+<pre>
+Adding repository 'vlc' [done]
+Repository 'vlc' successfully added
+Enabled: Yes
+Autorefresh: No
+URI: http://download.videolan.org/pub/vlc/SuSE/11.1
+</pre>
+<p>Other examples:
+</p>
+<pre>
+zypper ar http://download.opensuse.org/repositories/X11:/XGL/openSUSE_11.1/X11:XGL.repo  # via .repo file
+zypper ar -c ftp://some.download.site myalias   # probe the repository upon adding
+zypper ar my/dir/with/rpms local                # add your local directory with rpm files as repository
+</pre>
+<p>See also <a href="http://en.opensuse.org/Portal:Libzypp" title="Portal:Libzypp">Libzypp</a> for the list of supported media types and URIs.
+</p>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=11" title="Edit section: Refreshing repositories">edit</a>]</span> <span class="mw-headline" id="Refreshing_repositories">Refreshing repositories</span></h4>
+<p><b>refresh</b> or <b>ref</b>
+</p><p>After adding of a repository or when a repository becomes out of date, it needs to be <i>refreshed</i>. This mean downloading package metadata from it and preprocessing the data into <i>.solv</i> cache for quick reading.
+</p>
+<div class="shell"># zypper refresh</div>
+<pre>
+Downloading repository 'Packman 11.1' metadata [done]
+Building repository 'Packman 11.1' cache [done]
+Downloading repository 'Updates for 11.1' metadata [done]
+Building repository 'Updates for 11.1' cache [done]
+Repository 'openSUSE-11.1-Oss' is up to date.
+All repositories have been refreshed.
+</pre>
+<p>If <i>autorefresh</i> is enabled for a repository, you don't need to worry about refreshing, it happens automatically when needed. However, some people prefer to be in control when the refresh takes place (e.g. to avoid waiting for the refresh to complete when you only wanted to see 'zypper info krusader'), so they disable autorefresh. See <tt>man zypper</tt> for more details.
+</p><p>Other examples:
+</p>
+<pre>
+zypper ref packman main  # you can also specify which repositories to refresh
+zypper ref -f upd        # force refresh of the 'upd' repository
+</pre>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=12" title="Edit section: Removing repositories">edit</a>]</span> <span class="mw-headline" id="Removing_repositories">Removing repositories</span></h4>
+<p><b>removerepo</b> or <b>rr</b>
+</p>
+<div class="shell"># zypper rr vlc 1 23 foo</div>
+<pre>
+Repository 23 not found by alias, number or URI.
+Repository foo not found by alias, number or URI.
+Removing repository 'repo-debug' [done]
+Repository 'repo-debug' has been removed.
+Removing repository 'vlc' [done]
+Repository 'vlc' has been removed.
+</pre>
+<p><br />
+</p>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=13" title="Edit section: Modifying repositories">edit</a>]</span> <span class="mw-headline" id="Modifying_repositories">Modifying repositories</span></h4>
+<p><b>modifyrepo</b> or <b>mr</b>
+</p><p>Disable repository #6:
+</p>
+<div class="shell"># zypper mr -d 6</div>
+<pre>
+Repository 'repo-non-oss' has been sucessfully disabled.
+</pre>
+<p>Enable autorefresh and rpm files caching for 'packman' repository and set its priority to 70:
+</p>
+<div class="shell"># zypper mr -rk -p 70 packman</div>
+<pre>
+Autorefresh has been enabled for repository 'packman'.
+RPM files caching has been enabled for repository 'packman'.
+Repository 'packman' priority has been set to 70.
+</pre>
+<p>Disable RPM files caching for all repositories:
+</p>
+<div class="shell"># zypper mr -Ka</div>
+<pre>
+Nothing to change for repository 'local'.
+RPM files caching has been disabled for repository 'packman'.
+Nothing to change for repository 'fate'.
+Nothing to change for repository 'upd'.
+Nothing to change for repository 'repo-oss'.
+Nothing to change for repository 'repo-non-oss'.
+</pre>
+<p>Enable RPM files caching for all repositories:
+</p>
+<div class="shell"># zypper mr -ka</div>
+<pre>
+RPM files caching has been enabled for repository 'repo-non-oss'.
+RPM files caching has been enabled for repository 'Main Repository (OSS)'.
+RPM files caching has been enabled for repository 'Main Repository (NON-OSS)'.
+RPM files caching has been enabled for repository 'openSUSE-11.1-Updates'.
+</pre>
+<p><br />
+</p>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=14" title="Edit section: Renaming repositories">edit</a>]</span> <span class="mw-headline" id="Renaming_repositories">Renaming repositories</span></h4>
+<p><b>renamerepo</b> or <b>nr</b>
+</p>
+<div class="shell"># zypper nr 3 upd</div>
+<pre>Repository 'openSUSE-11.1-Updates' renamed to 'upd'.
+</pre>
+<p>This command is currently only able to change the <i>alias</i> of the repository. If you wish to change the <i>displayed name</i> of the repository, take a look at the <tt>mr</tt> command.
+</p><p>Keep the aliases short and simple for an easy use as arguments of commands and --repo options. Using an alias is safer than using repo number (since that may change and you can easily make a mistake) and easier than using URI (since they are long, leaving you with copy-and-paste).
+</p>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=15" title="Edit section: Export/Import repositories">edit</a>]</span> <span class="mw-headline" id="Export.2FImport_repositories">Export/Import repositories </span></h4>
+<p><b>repos --export</b> or <b>lr -e</b>
+</p><p>You can export your complete repository list to a file and import it later or on another machine.
+</p>
+<div class="shell"># zypper lr --export backups/repos/foo.repo</div>
+<div class="shell"># zypper ar backups/repos/foo.repo</div>
+<h3><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=16" title="Edit section: Service management">edit</a>]</span> <span class="mw-headline" id="Service_management">Service management</span></h3>
+<p>&lt;to be added&gt;
+</p><p><br />
+</p>
+<h3><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=17" title="Edit section: Package management">edit</a>]</span> <span class="mw-headline" id="Package_management">Package management</span></h3>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=18" title="Edit section: Selecting packages">edit</a>]</span> <span class="mw-headline" id="Selecting_packages">Selecting packages</span></h4>
+<p>There are several ways in which you can choose packages for installation or removal.
+</p>
+<ul>
+<li>by capability name<br />
+  <tt>zypper in eclipse<br />
+  zypper in qt</tt></li>
+<li>by capability name and/or architecture and/or version<br />
+  <tt>zypper in 'zypper&lt;0.12.10'<br />
+  zypper in zypper.i586=0.12.11
+  </tt></li>
+<li>by exact package name (--name)<br />
+  <tt>zypper in -n ftp</tt></li>
+<li>by exact package name and repository (implies --name)<br />
+  <tt>zypper in factory:zypper</tt></li>
+<li>by package name using wildcards<br />
+  <tt>zypper in yast*ftp*</tt></li>
+<li>by specifying an .rpm package file to install</li>
+</ul>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=19" title="Edit section: Installing packages">edit</a>]</span> <span class="mw-headline" id="Installing_packages">Installing packages</span></h4>
+<p><b>install</b> or <b>in</b>
+</p><p>You can install packages by name...
+</p>
+<div class="shell"># zypper install git</div>
+<pre>
+Reading installed packages...
+
+The following NEW packages are going to be installed:
+  subversion-perl sqlite3 perl-DBD-SQLite git-svn git-cvs git
+
+
+Overall download size: 1.1 M. After the operation, additional 4.6 M will be used.
+Continue? [YES/no]:
+Downloading package subversion-perl-1.5.0-96.1.x86_64 (1/6), 950.0 K (4.1 M unpacked)
+Downloading: subversion-perl-1.5.0-96.1.x86_64.rpm [done]
+Installing: subversion-perl-1.5.0-96.1 [done]
+Downloading package sqlite3-3.5.7-17.1.x86_64 (2/6), 30.0 K (40.0 K unpacked)
+Downloading: sqlite3-3.5.7-17.1.x86_64.rpm [done]
+Installing: sqlite3-3.5.7-17.1 [done]
+Downloading package perl-DBD-SQLite-1.14-41.1.x86_64 (3/6), 44.0 K (103.0 K unpacked)
+Downloading: perl-DBD-SQLite-1.14-41.1.x86_64.rpm [done]
+Installing: perl-DBD-SQLite-1.14-41.1 [done]
+Downloading package git-svn-1.5.4.5-26.1.x86_64 (4/6), 66.0 K (195.0 K unpacked)
+Downloading: git-svn-1.5.4.5-26.1.x86_64.rpm [done]
+Installing: git-svn-1.5.4.5-26.1 [done]
+Downloading package git-cvs-1.5.4.5-26.1.x86_64 (5/6), 63.0 K (205.0 K unpacked)
+Downloading: git-cvs-1.5.4.5-26.1.x86_64.rpm [done]
+Installing: git-cvs-1.5.4.5-26.1 [done]
+Downloading package git-1.5.4.5-26.1.x86_64 (6/6), 10.0 K (3.0 K unpacked)
+Downloading: git-1.5.4.5-26.1.x86_64.rpm [done]
+Installing: git-1.5.4.5-26.1 [done]
+</pre>
+<p>...or by capability they provide:
+</p>
+<div class="shell"># zypper in MozillaFirefox \&lt; 3</div>
+<pre>
+Reading installed packages...
+'MozillaFirefox' providing 'MozillaFirefox&lt;3' is already installed.
+Nothing to do.
+</pre>
+<div class="shell"># zypper in MozillaFirefox \&gt;= 3</div>
+<pre>
+Reading installed packages...
+
+The following packages are going to be upgraded:
+  mozilla-xulrunner190-translations MozillaFirefox mozilla-xulrunner190-gnomevfs
+mozilla-xulrunner190 MozillaFirefox-translations
+
+
+The following package is going to be REMOVED:
+  mozilla-xulrunner190-lang
+
+
+Overall download size: 11.0 M. After the operation, 12.9 M will be freed.
+Continue? [Y/n/p/?]:
+</pre>
+<div class="shell"># zypper in 'libqtiff.so()(64bit)'</div>
+<pre>
+Reading installed packages...
+'libqt4-x11' providing 'libqtiff.so()(64bit)' is already installed.
+Nothing to do.
+</pre>
+<p>Other examples:
+</p>
+<pre>
+zypper in yast*                     # install all yast modules
+zypper in -t pattern lamp_server    # install lamp_server pattern (packages needed for a LAMP server)
+zypper in emacs pattern:lamp_server # install the emacs package and lamp_server pattern
+zypper in vim -emacs                # install vim and remove emacs in one go
+zypper in amarok packman:libxine1   # install libxine1 from packman and amarok from any repo
+zypper in bitchx-1.1-81.x86_64.rpm  # install bitchx rpm from local directory
+zypper in -f subversion             # force reinstallation of subversion
+</pre>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=20" title="Edit section: Removing packages">edit</a>]</span> <span class="mw-headline" id="Removing_packages">Removing packages</span></h4>
+<p><b>remove</b> or <b>rm</b>
+</p><p>The <tt>remove</tt> command is very much like the install command, except that the effect is the opposite&#160;:O)
+</p>
+<div class="shell"># zypper remove sqlite</div>
+<pre>
+Reading installed packages...
+
+The following packages are going to be REMOVED:
+  sqlite3 perl-DBD-SQLite git-cvs git
+
+
+After the operation, 351.0 K will be freed.
+Continue? [YES/no]: n
+</pre>
+<p><br />
+</p>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=21" title="Edit section: Source packages and build dependencies">edit</a>]</span> <span class="mw-headline" id="Source_packages_and_build_dependencies">Source packages and build dependencies</span></h4>
+<p><b>source-install</b> or <b>si</b>
+</p>
+<div class="shell"># zypper si zypper</div>
+<pre>
+Reading installed packages...
+
+The following NEW packages are going to be installed:
+  libzypp-devel libsatsolver-devel
+
+
+The following source package is going to be installed:
+  zypper
+
+
+Overall download size: 1.5 M. After the operation, additional 6.7 M will be used.
+Continue? [YES/no]:
+</pre>
+<p>You can also install only the build deps or only the source package:
+</p>
+<pre>
+zypper si -D zypper    # only the source packages (no build deps)
+zypper si -d zypper    # only the build deps (no source package)
+</pre>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=22" title="Edit section: Updating packages">edit</a>]</span> <span class="mw-headline" id="Updating_packages">Updating packages</span></h4>
+<p><b>update</b> or <b>up</b>
+</p><p>The following commands update packages with their newer available versions. See also <a href="SDB%253AZypper_usage_11.3.html#Update_management">Update Management</a> for more information.
+</p>
+<pre>
+zypper up                           # update all installed packages with newer version as far as possible
+zypper up libzypp zypper            # update libzypp and zypper
+zypper in sqlite3                   # update sqlite3 or install it if not yet installed
+</pre>
+<h3><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=23" title="Edit section: Querying">edit</a>]</span> <span class="mw-headline" id="Querying">Querying</span></h3>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=24" title="Edit section: Searching packages">edit</a>]</span> <span class="mw-headline" id="Searching_packages">Searching packages</span></h4>
+<p><b>search</b> or <b>se</b>
+</p><p>By default, the <b>search</b> command looks for packages of any type, status or repository, having names containing specified string (compares case-insensitively):
+</p>
+<div class="shell"># zypper se sqlite</div>
+<pre>
+Reading installed packages...
+
+S | Name                     | Summary                                                        | Type
+--+--------------------------+----------------------------------------------------------------+--------
+  | libapr-util1-dbd-sqlite3 | DBD driver for SQLite 3                                        | package
+i | libgda-3_0-sqlite        | Sqlite Provider for GNU Data Access (GDA)                      | package
+  | libqt4-sql-sqlite        | Qt 4 sqlite plugin                                             | package
+i | libsqlite3-0             | Shared libraries for the Embeddable SQL Database Engine        | package
+  | libsqlite3-0-32bit       | Shared libraries for the Embeddable SQL Database Engine        | package
+  | mediatomb-sqlite         | UPnP AV MediaServer                                            | package
+i | mono-data-sqlite         | Database connectivity for Mono                                 | package
+  | pdns-backend-sqlite2     | SQLite 2 backend for pdns                                      | package
+  | pdns-backend-sqlite3     | SQLite 3 backend for pdns                                      | package
+i | perl-DBD-SQLite          | The DBD::SQLite is a self contained RDBMS in a DBI driver      | package
+i | php5-sqlite              | PHP5 Extension Module                                          | package
+  | python-sqlite2           | Python bindings for sqlite 2                                   | package
+  | qt3-sqlite               | SQLite Database Plug-In for Qt                                 | package
+  | rekall-sqlite            | Rekall sqlite Database Backend                                 | package
+  | rubygem-sqlite3          | A Ruby interface for the SQLite3 database engine               | package
+i | sqlite2                  | Embeddable SQL Database Engine                                 | package
+  | sqlite2-32bit            | Embeddable SQL Database Engine                                 | package
+  | sqlite2-devel            | Embeddable SQL Database Engine                                 | package
+i | sqlite3                  | Embeddable SQL Database Engine                                 | package
+  | sqlite3-devel            | Embeddable SQL Database Engine                                 | package
+  | sqlite3-tcl              | Tcl binding for SQLite                                         | package
+  | tntdb1-sqlite            | Tntdb is a c++-class-library for easy database-access - sqlite | package
+  | ulogd-sqlite             | SQLite output plugin for ulogd                                 | package
+</pre>
+<p>The letter "i" in column one (1); states that the package is already installed on the local machine. To see all available versions of matching packages, use <tt>"--details/-s"</tt> option:
+</p>
+<div class="shell"># zypper search -s --match-exact virtualbox-ose</div>
+<pre>
+Reading installed packages...
+
+S | Name           | Type    | Version    | Arch   | Repository
+--+----------------+---------+------------+--------+------------------------------------
+v | virtualbox-ose | package | 1.6.2-2.1  | x86_64 | VirtualBox OSE
+i | virtualbox-ose | package | 1.5.6-33.1 | x86_64 | openSUSE-11.1-Oss
+v | virtualbox-ose | package | 1.5.6-20.5 | x86_64 | VirtualBox OSE (
+v | virtualbox-ose | package | 1.6.2-2.1  | i586   | VirtualBox OSE
+v | virtualbox-ose | package | 1.5.6-33.1 | i586   | openSUSE-11.1-Oss
+v | virtualbox-ose | package | 1.5.6-20.3 | i586   | VirtualBox OSE
+</pre>
+<p>The letter "i" in column one (1); states that the software selected is already installed on the local machine, while the letter "v" in column one (1); states that there are other versions of the product installed on the local machine.
+</p><p>Other examples:
+</p>
+<pre>
+zypper se -dC --match-words RSI   # look for RSI acronym (case-sensitively), also in summaries and descriptions
+zypper se 'yast*'                 # show all packages starting with 'yast' (beware of shell expansion, quote the strings if unsure!)
+zypper se -r packman              # list all packages from 'packman' repository
+zypper se -i sqlite               # show all installed packages containing 'sqlite' in their name
+zypper se -t pattern -r repo-oss  # list all patterns available in the 'repo-oss' repository
+zypper se -t product              # list all available products
+</pre>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=25" title="Edit section: Obtaining information about packages">edit</a>]</span> <span class="mw-headline" id="Obtaining_information_about_packages">Obtaining information about packages</span></h4>
+<p><b>info</b> or <b>if</b>
+</p>
+<div class="shell">
+<p>zypper info amarok
+</p>
+</div>
+<pre>
+Reading installed packages...
+
+
+Information for package amarok:
+
+Repository: Packman 11.1
+Name: amarok
+Version: 1.4.9.1-103.pm.1
+Arch: x86_64
+Vendor: packman.links2linux.de
+Installed: Yes
+Status: up-to-date
+Installed Size: 12.1 M
+Summary: Media Player for KDE
+Description:
+Amarok is a media player for all kinds of media, supported by aRts, GStreamer
+or Xine (depending on the packages you install). This includes MP3, Ogg
+Vorbis, audio CDs and streams.
+It also supports audio effects of all kinds that are provided by aRts.
+Playlists can be stored in .m3u or .pls files.
+
+Amarok also provides audio file collection management, by using either an
+embedded sqlite3, a MySQL or a PostgreSQL database.
+</pre>
+<p>This command displays detailed information about package named 'amarok'.
+</p><p>Other examples:
+</p>
+<pre>
+zypper info -t patch MozillaFirefox    # show information about 'MozillaFirefox' patch
+zypper patch-info MozillaFirefox       # the same as above
+zypper info -t pattern lamp_server     # show info about 'lamp_server' pattern
+zypper info -t product openSUSE-FTP    # show info about specified product
+</pre>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=26" title="Edit section: Dependencies">edit</a>]</span> <span class="mw-headline" id="Dependencies">Dependencies</span></h4>
+<p><b>what-provides</b> or <b>wp</b>
+</p><p>To list all providers of specified capability, do:
+</p>
+<div class="shell"># zypper wp firefox</div>
+<pre>
+Reading installed packages...
+S | Name           | Type    | Version     | Arch   | Repository
+--+----------------+---------+-------------+--------+------------------
+i | MozillaFirefox | package | 3.0-0.1     | x86_64 | Updates for 11.1
+v | MozillaFirefox | package | 2.9.95-25.1 | x86_64 | openSUSE-11.1-Oss
+v | MozillaFirefox | package | 3.0-0.1     | i586   | Updates for 11.1
+v | MozillaFirefox | package | 2.9.95-25.1 | i586   | openSUSE-11.1-Oss
+</pre>
+<p>This command is similar to <tt>rpm -q --whatprovides firefox</tt>, but <tt>rpm</tt> is only able to query the RPM database (database of the installed packages). Zypper, on the other hand, will tell you about providers of the capability from any repository, not only the installed ones.
+</p><p><br />
+</p>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=27" title="Edit section: Other queries">edit</a>]</span> <span class="mw-headline" id="Other_queries">Other queries</span></h4>
+<p>Commands <b>patches</b>, <b>packages</b>, <b>patterns</b>, and <b>products</b> are similar to <b>search -s -t [patch,package,pattern,product]</b>, except that they display some additional information specific to the corresponding package type. For example <tt>patches</tt> shows also the status of patches (Needed/Security/Not Applicable).
+</p><p>Commands <b>list-updates</b> and <b>patch-check</b> are discussed in <a href="SDB%253AZypper_usage_11.3.html#Update_management">Update Management</a>.
+</p>
+<h3><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=28" title="Edit section: Package locks">edit</a>]</span> <span class="mw-headline" id="Package_locks">Package locks</span></h3>
+<p><b>locks</b> or <b>ll</b>
+<b>addlock</b> or <b>al</b>
+<b>removelock</b> or <b>rl</b>
+<b>cleanlocks</b> or <b>cl</b>
+</p><p>Package locks serve the purpose of preventing changes to the packages on the system. Packages matching an active lock can't change their installed status; installed packages can't be removed or upgraded, packages not yet installed can't be installed.
+</p><p>To lock all packages starting with 'yast2', do:
+</p>
+<div class="shell"># zypper al 'yast2*'</div>
+<pre>Reading installed packages...
+Specified lock has been successfully added.
+</pre>
+<p>Again beware of shell expansion, use quotes if there is a possibility that <i>yast*</i> will match some files or directories in the working directory.
+</p><p>To list currently active locks:
+</p>
+<div class="shell"># zypper ll</div>
+<pre>
+# | Name             | Type    | Repository
+--+------------------+---------+-----------
+1 | libpoppler3      | package | (any)
+2 | libpoppler-glib3 | package | (any)
+3 | yast*            | package | (any)
+</pre>
+<p>To remove a lock, do:
+</p>
+<div class="shell"># zypper rl yast2-packager</div>
+<pre>
+Reading installed packages...
+The following query locks some of the objects you want to unlock:
+
+type: package
+match_type: glob
+case_sensitive: on
+solvable_name: yast2*
+
+Do you want remove this lock? [YES/no]: y
+Lock count has been succesfully decreased by: 1
+</pre>
+<p>Other examples:
+</p>
+<div class="shell">
+<p>zypper al zypper                   # lock package 'zypper' (exact match)
+zypper al -r repo-oss virtualbox*  # restrict the lock to 'repo-oss' repository (allowing installation from others)
+zypper rl 3                        # remove lock by number
+</p>
+</div>
+<p>You can manipulate the locks also by directly editing the <a href="http://en.opensuse.org/openSUSE:Libzypp_locks_file" title="openSUSE:Libzypp locks file">locks file</a>.
+</p>
+<h3><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=29" title="Edit section: Utilities">edit</a>]</span> <span class="mw-headline" id="Utilities">Utilities</span></h3>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=30" title="Edit section: Verify dependencies">edit</a>]</span> <span class="mw-headline" id="Verify_dependencies">Verify dependencies</span></h4>
+<p><b>verify</b> or <b>ve</b>
+</p><p>You may occasionally end up with a broken system when it comes to package dependencies. If some of your applications fails to start with a message indicating that it misses something, this is something for zypper to check:
+</p>
+<div class="shell">$ rpm -e --nodeps mozilla-xulrunner190
+$ firefox</div>
+<pre>
+Could not find compatible GRE between version 1.9.0 and 1.9.0.</pre>
+<div class="shell"># zypper ve</div>
+<pre>
+Reading installed packages...
+Some of the dependencies of installed packages are broken. In order to fix these dependencies, the following actions need to be taken:
+
+The following NEW package is going to be installed:
+  mozilla-xulrunner190
+
+
+Overall download size: 6.5 M. After the operation, additional 23.5 M will be used.
+Continue? [YES/no]: y
+</pre>
+<p><br />
+</p>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=31" title="Edit section: Install new recommended packages">edit</a>]</span> <span class="mw-headline" id="Install_new_recommended_packages">Install new recommended packages</span></h4>
+<p><b>install-new-recommends</b> or <b>inr</b>
+</p><p>This command finds and installs newly added recommended packages for packages you have already installed. This provides an easy way to get new language bundles for your software or drivers for newly added hardware.
+</p>
+<div class="shell"># zypper inr</div>
+<pre>
+Reading installed packages...
+
+The following NEW packages are going to be installed:
+  kdebase4-openSUSE-lang bundle-lang-common-cs
+
+
+Overall download size: 534.0 K. After the operation, additional 1.9 M will be used.
+Continue? [YES/no]:
+</pre>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=32" title="Edit section: Check processes">edit</a>]</span> <span class="mw-headline" id="Check_processes">Check processes</span></h4>
+<p><b>ps</b>
+</p><p>This command shows processes that use files deleted by recent package upgrades or removal
+</p>
+<pre>
+There are some running programs that use files deleted by recent upgrade. You may wish to restart some of them. Run 'zypper ps' to list these programs.</pre>
+<div class="shell"># zypper ps</div>
+<pre>
+The following running processes use deleted files:
+
+PID   | PPID  | UID  | Login | Command       | Service | Files
+------+-------+------+-------+---------------+---------+--------------------------------
+10604 | 10603 | 1000 | geeko | chrome        |         | /usr/share/mime/mime.cache
+      |       |      |       |               |         | /usr/share/mime/mime.cache
+15304 | 3195  | 1000 | geeko | kio_thumbnail |         | /var/tmp/kdecache-geeko/ksycoca4
+      |       |      |       |               |         | /var/tmp/kdecache-geeko/ksycoca4
+
+You may wish to restart these processes.
+See 'man zypper' for information about the meaning of values in the above table.
+</pre>
+<h3><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=33" title="Edit section: Update management">edit</a>]</span> <span class="mw-headline" id="Update_management">Update management</span></h3>
+<p>There are two approaches to keeping your system up to date. One is <i>patch-wise</i>, the second is <i>package-wise</i>.
+</p><p>The <i>patch-wise</i> approach is particularly useful for people using stable releases and want update their systems with patches released through online update repositories. Update repositories are added by default during installation or upgrade of the system, or they can be added via <i>Online Update Configuration</i> from the Software tab in <i>YaST Control Center</i>, or manually using <a href="SDB%253AZypper_usage_11.3.html#Adding_Repositories">zypper</a>. Here is <a href="http://download.opensuse.org/update/" class="external text" rel="nofollow">the list of available openSUSE update repositories</a>.
+</p><p>YaST equivalent of this feature is the <a href="http://en.opensuse.org/YaST_Online_Update" title="YaST Online Update">Online Update</a> module.
+</p><p>The second, <i>package-wise</i> update is described in section <a href="SDB%253AZypper_usage_11.3.html#Package_Updates">Package Updates</a> and servers for general updating of packages from any repository with their newer versions.
+</p>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=34" title="Edit section: Listing needed patches">edit</a>]</span> <span class="mw-headline" id="Listing_needed_patches">Listing needed patches</span></h4>
+<p><b>list-patches</b> or <b>lp</b>
+</p><p>To list all needed patch updates, do:
+</p>
+<div class="shell"># zypper lp</div>
+<pre>
+Reading installed packages...
+Patches
+
+Repository       | Name               | Version | Category    | Status
+-----------------+--------------------+---------+-------------+-------
+Updates for 11.1 | KDE4-fixes         | 38      | recommended | Needed
+Updates for 11.1 | MozillaFirefox     | 50      | recommended | Needed
+Updates for 11.1 | NetworkManager-kde | 49      | recommended | Needed
+</pre>
+<p>Sometimes only updates affecting the package management are listed, since these should be applied first. Once applied, the rest of available updates will be listed by this command.
+</p><p>This command is equivalent to <i>zypper up -t patch</i> known from older zypper versions. To list all available package updates, use:
+</p>
+<div class="shell"># zypper lu</div>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=35" title="Edit section: Applying patches">edit</a>]</span> <span class="mw-headline" id="Applying_patches">Applying patches</span></h4>
+<p><b>patch</b>
+</p><p>To apply the needed patches, do:
+</p>
+<div class="shell"># zypper patch</div>
+<pre>
+Reading installed packages...
+
+The following packages are going to be upgraded:
+  NetworkManager-kde mozilla-nss mozilla-nspr kde4-korganizer
+
+
+The following NEW patches are going to be installed:
+  NetworkManager-kde MozillaFirefox KDE4-fixes
+
+
+Overall download size: 2.9 M. After the operation, additional 283.0 K will be used.
+Continue? [YES/no]:
+</pre>
+<p><br />
+</p>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=36" title="Edit section: Listing all patches">edit</a>]</span> <span class="mw-headline" id="Listing_all_patches">Listing all patches</span></h4>
+<p><b>patches</b>
+</p><p>The <tt>list-updates</tt> command only lists needed patches. To list all available patches, use:
+</p>
+<div class="shell"># zypper patches</div>
+<pre>
+Reading installed packages...
+Catalog          | Name               | Version | Category    | Status
+-----------------+--------------------+---------+-------------+---------------
+Updates for 11.1 | KDE4-fixes         | 38      | recommended | Installed
+Updates for 11.1 | MozillaFirefox     | 50      | recommended | Installed
+Updates for 11.1 | NetworkManager-kde | 49      | recommended | Installed
+Updates for 11.1 | autoyast2          | 37      | recommended | Installed
+Updates for 11.1 | courier-authlib    | 42      | security    | Not Applicable
+Updates for 11.1 | insserv            | 47      | recommended | Installed
+Updates for 11.1 | opera              | 43      | security    | Installed
+</pre>
+<p><br />
+</p>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=37" title="Edit section: Checking patches">edit</a>]</span> <span class="mw-headline" id="Checking_patches">Checking patches</span></h4>
+<p><b>patch-check</b>
+</p><p>This command will tell you whether there are any important patches available for your system and the number of such patches:
+</p>
+<div class="shell"># zypper pchk</div>
+<pre>Reading installed packages...
+0 patches needed (0 security patches)
+</pre>
+<p><br />
+</p>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=38" title="Edit section: Getting information about patches">edit</a>]</span> <span class="mw-headline" id="Getting_information_about_patches">Getting information about patches</span></h4>
+<p><b>patch-info</b><br />
+<b>info -t patch</b>
+</p>
+<div class="shell"># zypper info -t patch MozillaFirefox</div>
+<pre>
+Reading installed packages...
+
+
+Information for patch MozillaFirefox:
+
+Name: MozillaFirefox
+Version: 50
+Arch: noarch
+Vendor: maint-coord@suse.de
+Status: Installed
+Category: recommended
+Created On: Thu 01 Jan 1970 01:00:00 AM CET
+Reboot Required: No
+Package Manager Restart Required: No
+Interactive: No
+Summary: Mozilla Firefox 3.0
+Description:
+This patch updates Mozilla Firefox to the final 3.0 version.
+
+The dependend libraries mozilla-xulrunner190, mozilla-nspr
+and mozilla-nss were also brought to their release version.
+</pre>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=39" title="Edit section: Package updates">edit</a>]</span> <span class="mw-headline" id="Package_updates">Package updates</span></h4>
+<p><b>list-updates</b> or <b>lu</b><br />
+<b>update</b> or <b>up</b>
+</p><p>To simply update installed packages with their newer available versions, do:
+</p>
+<div class="shell"># zypper up</div>
+<p>You can get a list of available updates with:
+</p>
+<div class="shell"># zypper lu</div>
+<p>The above commands will list or update only such packages whose update has
+no dependency problems. To get raw list of packages with newer versions than those
+installed, do:
+</p>
+<div class="shell"># zypper lu -a</div>
+<p>This will list all update candidates, regardless whether they are installable
+or not, or whether they need user's interaction to resolve some problems.
+</p>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=40" title="Edit section: Distribution upgrade">edit</a>]</span> <span class="mw-headline" id="Distribution_upgrade">Distribution upgrade</span></h4>
+<p><b>dist-upgrade</b> or <b>dup</b>
+</p><p>This command uses the distribution upgrade algorithm, which handles package splits, unmaintaned packages, and similar. Use it to switch to another distribution release.
+</p>
+<div class="shell"># zypper dup</div>
+<p>It is recommended to enable only the main repository of the distribution you want to install plus a few important repositories you were using (even better - their version corresponding to the current main repository) during a dist-upgrade. You can achieve this by disabling the old repositories using <b>zypper mr -da</b>, adding the new repositories via <b>zypper ar</b> and issuing <b>zypper dup</b>. You can also specify repositories to be used using --repo option: <b>zypper dup -r repo1 -r repo2 ...</b>.
+</p>
+<div class="info-wrapper">
+<div class="info"><p>
+<p><i><b>Q:</b></i> Is it true that "zypper up" only upgrades packages when a newer version is in the same repo as the outdated package and "zypper dup" upgrades everything, no matter in which repo the new package is located?
+</p><p><i><b>A:</b></i> "zypper up" updates the packages if a newer version is available but will not change the vendor (Note: The whole build service currently has the same vendor). "zypper dup" will try to sync your currently installed packages with the ones available from (all) the repos you have enabled. This means it will also downgrade packages if your installed version is newer than the one available in the repo.
+</p>
+</p></div></div>
+<hr />
+<h2><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=41" title="Edit section: Using zypper in scripts and applications">edit</a>]</span> <span class="mw-headline" id="Using_zypper_in_scripts_and_applications">Using zypper in scripts and applications</span></h2>
+<p>Zypper supports several global options which make it suitable for use within automated processes like scripts. Also, several different exit codes listed in zypper's manual page can be checked for when using zypper in an automated process.
+</p><p><br />
+</p>
+<h3><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=42" title="Edit section: Non interactive mode">edit</a>]</span> <span class="mw-headline" id="Non_interactive_mode">Non interactive mode</span></h3>
+<p><b>--non-interactive</b>
+</p><p>In this mode zypper does not prompt the user for any answers and uses default answers instead. When using this option it is guaranteed that zypper will not hang prompting for an answer on stdin, or in an endless loop.
+</p><p>For example, to update your system automatically without confirmation, you can type
+</p>
+<div class="shell"># zypper --non-interactive update</div>
+<p>This command does not require confirmation from the user to proceed with update, skips all interactive patches which would need additional confirmation and also automatically answers any other prompts.
+</p><p><br />
+</p>
+<h3><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=43" title="Edit section: No GPG checks mode">edit</a>]</span> <span class="mw-headline" id="No_GPG_checks_mode">No GPG checks mode</span></h3>
+<p><b>--no-gpg-checks</b>
+</p><p>If this option is used, zypper will always choose to continue if some of the gpg checks
+fails, e.g. a repository file is not signed and should be, a file is signed and the gpg check fails, etc.
+</p><p><br />
+</p>
+<h3><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=44" title="Edit section: Auto-agree with licenses">edit</a>]</span> <span class="mw-headline" id="Auto-agree_with_licenses">Auto-agree with licenses</span></h3>
+<p><b>--auto-agree-with-licenses</b>
+</p><p>This is special option for the install, remove and update commands. By using this, the user
+declares he/she agrees with the terms of licenses the command will install, and zypper will automatically say 'yes' to the license confirmation prompt. This is useful for people installing the same set of packages on multiple machines (by an automated process) and have read all the licenses before.
+</p><p><br />
+</p>
+<h3><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=45" title="Edit section: Quiet output">edit</a>]</span> <span class="mw-headline" id="Quiet_output">Quiet output</span></h3>
+<p><b>--quiet</b>
+</p><p>Avoids displaying too much texts like progress information and only displays result of the operation and error messages.
+</p><p><br />
+</p>
+<h3><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=46" title="Edit section: XML output">edit</a>]</span> <span class="mw-headline" id="XML_output">XML output</span></h3>
+<p><b>--xmlout</b>
+</p><p>This option makes zypper to talk in XML. This allows scripts, graphical front-ends or other types of applications which would like to use zypper, to parse zypper's output in a well-defined, standard way. The RNC schema of zypper's XML output is available <a href="http://svn.opensuse.org/svn/zypp/trunk/zypper/src/output/xmlout.rnc" class="external text" rel="nofollow">here</a> and at <tt>/usr/share/zypper/xml/xmlout.rnc</tt>.
+</p><p>Not all (but most of) the output is currently in XML; the goal is to have all possible output in XML.
+</p><p><br />
+</p>
+<h3><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=47" title="Edit section: Prompts">edit</a>]</span> <span class="mw-headline" id="Prompts">Prompts</span></h3>
+<p>The following should be a complete list of cases where zypper needs user
+interaction together with the replies used in non-interactive mode. All the
+additional options mentioned here have higher priority over
+--non-interactive, so if used, the answer they imply are automatically
+used even if --non-interactive isn't used.
+</p><p><br />
+</p>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=48" title="Edit section: GPG-related prompts">edit</a>]</span> <span class="mw-headline" id="GPG-related_prompts">GPG-related prompts</span></h4>
+<p>Where --no-gpg-checks is applied, a message is displayed or a warning is written to stderr and logged.
+</p>
+<table border="1">
+
+<tr>
+<th> prompt
+</th>
+<th> default answer
+</th>
+<th> with --no-gpgp-checks
+</th>
+<th> note
+</th></tr>
+<tr>
+<td>accept unsigned file?
+</td>
+<td>N
+</td>
+<td>Y
+</td>
+<td>
+</td></tr>
+<tr>
+<td>accept new key (reject the key, trust temporarily, or trust always? [r/t/a])
+</td>
+<td>R
+</td>
+<td>R
+</td>
+<td>a new key can be trusted or imported in the interactive mode only
+</td></tr>
+<tr>
+<td>accept unknown key?
+</td>
+<td>N
+</td>
+<td>Y
+</td>
+<td>
+</td></tr>
+<tr>
+<td>verification of signed file failed, continue?
+</td>
+<td>N
+</td>
+<td>Y
+</td>
+<td>
+</td></tr>
+<tr>
+<td>no digest for a file, continue?
+</td>
+<td>N
+</td>
+<td>Y
+</td>
+<td>
+</td></tr>
+<tr>
+<td>accept unknown digest?
+</td>
+<td>N
+</td>
+<td>Y
+</td>
+<td>
+</td></tr></table>
+<h4><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=49" title="Edit section: Other prompts">edit</a>]</span> <span class="mw-headline" id="Other_prompts">Other prompts</span></h4>
+<table border="1">
+
+<tr>
+<th> prompt
+</th>
+<th> default answer
+</th>
+<th> other answer
+</th>
+<th> note
+</th></tr>
+<tr>
+<td>proceed with installation/removal/update?
+</td>
+<td>Y
+</td>
+<td>
+</td>
+<td>in addition, the <tt>--no-confirm</tt> option can be used with the install/remove/update commands even without the global <tt>--non-interactive</tt>
+</td></tr>
+<tr>
+<td>confirm 3rd party license
+</td>
+<td>N
+</td>
+<td>Y if <tt>--auto-agree-with-licenses</tt> is used
+</td>
+<td>in addition, for zypper update, --skip-interactive option can be used to exclude interactive patches from to-be-installed list (a heritage of rug)
+</td></tr>
+<tr>
+<td> confirm a patch message
+</td>
+<td> Y
+</td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr>
+<td> problem while installing/removing a resolvable, Abort/Retry/Ignore?
+</td>
+<td> ABORT
+</td>
+<td>
+</td>
+<td> this is ugly and can be improved in future
+</td></tr>
+<tr>
+<td> problem while downloading a package, Abort/Retry/Ignore?
+</td>
+<td> ABORT
+</td>
+<td>
+</td>
+<td> this is also ugly, can be enhanced somehow in the future
+</td></tr>
+<tr>
+<td> dependency conflict, #/s/r/c (solution number, skip, retry, or cancel)
+</td>
+<td> c
+</td>
+<td>
+</td>
+<td> always cancel, user interaction is needed to resolve dependencies
+</td></tr>
+<tr>
+<td> media change request
+</td>
+<td> ABORT
+</td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr>
+<td> remove problematic lock?
+</td>
+<td> Y
+</td>
+<td>
+</td>
+<td>
+</td></tr></table>
+<p>In XML output, prompts are indicated by <b>&lt;prompt&gt;</b> tag, containing <b>id</b> attribute. Enumeration of all known ids is available in <a href="http://svn.opensuse.org/svn/zypp/trunk/zypper/src/output/prompt.h" class="external text" rel="nofollow">prompt.h</a> include file packaged with zypper (<tt>/usr/include/zypper/prompt.h</tt>).
+</p>
+<hr />
+<h2><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=50" title="Edit section: Compatibility with Rug">edit</a>]</span> <span class="mw-headline" id="Compatibility_with_Rug">Compatibility with Rug</span></h2>
+<p>Zypper's syntax is similar to that of Rug but its command and option set has started to diversify from rug as well as its output and behavior. However, zypper is able to work also in <i>rug-compatible mode</i> and supports most of the rug commands. For more details see <tt>man zypper</tt>, section COMPATIBILITY WITH RUG.
+</p>
+<hr />
+<h2><span class="editsection">[<a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit&amp;section=51" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li><a href="http://en.opensuse.org/Package_management" title="Package management">Package management</a>
+</li></ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 645/1000000
+Post-expand include size: 3386/2097152 bytes
+Template argument size: 1476/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in stable version parser cache with key opensuse_en:stable-pcache:idhash:5165-0!*!0!!en!2 and timestamp 20130322130651 --><div class="printfooter">
+Retrieved from "<a href="SDB%253AZypper_usage_11.3.html">http://en.opensuse.org/SDB:Zypper_usage_11.3</a>"</div>
+
+        <div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="http://en.opensuse.org/Special:Categories" title="Special:Categories">Categories</a>: <span dir='ltr'><a href="http://en.opensuse.org/Category:Pages_to_update" title="Category:Pages to update">Pages to update</a></span> | <span dir='ltr'><a href="http://en.opensuse.org/Category:Zypper" title="Category:Zypper">Zypper</a></span> | <span dir='ltr'><a href="http://en.opensuse.org/Category:SDB:11.3" title="Category:SDB:11.3">SDB:11.3</a></span></div></div>                            <!-- End Content Area -->
+
+                </div>
+                <br/>
+
+                <div class="box-footer header-tabs">
+                    <ul>
+                                <li><a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;stable=1" class="selected">SDB</a></li><li><a href="http://en.opensuse.org/index.php?title=SDB_Talk:Zypper_usage_11.3&amp;action=edit&amp;redlink=1" class="new" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li><li><a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;stable=0&amp;redirect=no" class="collapsible" title="View this page with the pending changes [v]" accesskey="v">Pending changes</a></li><li><a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li><a href="http://en.opensuse.org/index.php?title=SDB:Zypper_usage_11.3&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                    </ul>
+                </div>
+
+            </div></div>
+
+        <!-- Note: this clears floating, set in previous elements -->
+        <div class="clear"></div>
+
+
+        <!-- Start: Footer -->
+                <!-- Start: included footer part -->
+<div id="footer" class="container_12">
+    <div id="footer-legal" class="border-top grid_12">
+        <p>This page has been accessed 104,466 times.</p><p>
+            &copy; 2011 Novell, Inc. and others.  All content  is made available under the terms
+            of the GNU Free Documentation License version 1.2 ("GFDL") unless expressly
+            otherwise indicated. | <a href="http://en.opensuse.org/Terms_of_site">Terms of site</a>
+        </p>
+    </div>
+</div>
+
+<!-- End: included footer part -->
+        <!-- End: Footer -->
+
+        
+<script src="load.php@debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=bentofluid&amp;%252A"></script>
+<script>if ( window.mediaWiki ) {
+	mediaWiki.config.set({"wgCanonicalNamespace": "SDB", "wgCanonicalSpecialPageName": false, "wgNamespaceNumber": 100, "wgPageName": "SDB:Zypper_usage_11.3", "wgTitle": "Zypper usage 11.3", "wgAction": "view", "wgArticleId": 5165, "wgIsArticle": true, "wgUserName": null, "wgUserGroups": ["*"], "wgCurRevisionId": 58559, "wgCategories": ["Pages to update", "Zypper", "SDB:11.3"], "wgBreakFrames": false, "wgRestrictionEdit": [], "wgRestrictionMove": [], "wgWikiEditorEnabledModules": {"toolbar": true, "dialogs": true, "templateEditor": false, "templates": false, "addMediaWizard": false, "preview": true, "previewDialog": false, "publish": false, "toc": false}, "wgFlaggedRevsParams": {"tags": {"accuracy": {"levels": 3, "quality": 2, "pristine": 4}, "depth": {"levels": 3, "quality": 1, "pristine": 4}, "style": {"levels": 3, "quality": 1, "pristine": 4}}}, "wgStableRevisionId": 54173, "wgRevContents": {"error": "Unable to get content.", "waiting": "Waiting for content"}, "sfgRemoveText": "Remove", "sfgAutocompleteOnAllChars": false, "sfgAutocompleteValues": {}, "sfgShowOnSelect": {}, "sfgFormErrorsHeader": "There were errors with your form input; see below", "sfgBlankErrorStr": "cannot be blank", "sfgBadURLErrorStr": "must have the correct URL format, starting with \"http\"", "sfgBadEmailErrorStr": "must have a valid email address format", "sfgBadNumberErrorStr": "must be a valid number", "sfgBadDateErrorStr": "must be a valid date", "sfgAnonEditWarning": "Warning: You are not logged in. Your IP address will be recorded in this page\'s edit history.", "egMapsDebugJS": false});
+}
+</script>
+<script>if ( window.mediaWiki ) {
+	mediaWiki.loader.load(["mediawiki.util", "mediawiki.legacy.wikibits", "mediawiki.legacy.ajax"]);
+	mediaWiki.loader.go();
+}
+</script>
+
+<script src="extensions/FlaggedRevs/client/flaggedrevs.js@87&amp;301"></script>
+<script>
+FlaggedRevs.messages = {"diffToggleShow": "show those changes", "diffToggleHide": "hide those changes", "logToggleShow": "show stability log", "logToggleHide": "hide stability log", "logDetailsShow": "show details", "logDetailsHide": "hide details", "toggleShow": "(+)", "toggleHide": "(-)"};
+</script>
+<script src="load.php@debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=bentofluid&amp;%252A"></script>
+<script>if ( window.mediaWiki ) {
+	mediaWiki.user.options.set({"ccmeonemails":0,"cols":80,"contextchars":50,"contextlines":5,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"bentofluid","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+	"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"wikieditor-preview":1,"flaggedrevssimpleui":1,"flaggedrevsstable":false,"flaggedrevseditdiffs":true,"flaggedrevsviewdiffs":false,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"searchNs101":false,"searchNs102":true,"searchNs103":false,"searchNs104":false,"searchNs105":false,"searchNs106":false,"searchNs107":false,"searchNs110":false,"searchNs111":false,"searchNs122":false,"searchNs123":false,"searchNs126":false,"searchNs127":false,"searchNs128":false,"searchNs129":false,
+	"searchNs420":false,"searchNs421":false});;mediaWiki.loader.state({"user.options":"ready"});
+}
+</script>        <!-- Served in 0.149 secs. -->
+    </body>
+</html>
+        
