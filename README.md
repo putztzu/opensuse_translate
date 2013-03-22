@@ -1,0 +1,2 @@
+opensue_translate
+=================
