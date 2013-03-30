@@ -296,8 +296,8 @@ A single hash(#) indicates using the Host console,  <br />
 <h3> <span class="mw-headline" id="1._Setting_up_the_chroot"> 1. Setting up the chroot </span></h3>
 <p>Create chroot Base filesystem(so can be replicated, is a Best Practice so you don't have to always re-create new root file systems), in this example, called "base." Many guides recommend creating your chroots in /var, but because I personally categorize these chroots as Development Environments I prefer to deploy them in my data partition (/home). Regardless where you place your chroot file systems, there must be plenty of available space, minimum 150MB for the base, maybe 1 GB and much more for each additional chroot file system. Currently, a complete openSUSE Folsom file system at the end of this Guide is approx 750MB before further customization.
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><pre class="de1"><span class="co2"># mkdir /home/&lt;username&gt;/chroots/base&lt;/br&gt;</span>
-<span class="co2"># zypper --root /home/&lt;username&gt;/chroots/base zypper in zypper wget vi rpm</span></pre></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2"># mkdir /home/&lt;username&gt;/chroots/base&lt;/br&gt;</span>
+<span class="co2"># zypper --root /home/&lt;username&gt;/chroots/base zypper in zypper wget vi rpm</span></pre></div></div>
 <h4> <span class="mw-headline" id="For_those_new_to_chroot.2C"> For those new to chroot, </span></h4>
 <p>This will create the basis for a new openSUSE isolated file system to be run within your Host creating necessary mount points but without populating /proc, /sys and /dev
 </p><p>This is your most basic portable file system, if you wish you can further install new packages or chroot into the system(described next) and modify if you wish.
@@ -310,70 +310,70 @@ A single hash(#) indicates using the Host console,  <br />
 - <b>lxc</b> The most secure, isolated method which also supports select virtualized services like networking
 </p>
 <h4> <span class="mw-headline" id="chroot"> chroot </span></h4>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><pre class="de1"><span class="co2"># mount --bind /proc /home/&lt;username&gt;/chroots/openstack/proc/</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2"># mount --bind /proc /home/&lt;username&gt;/chroots/openstack/proc/</span>
 <span class="co2"># mount --bind /sys /home/&lt;username&gt;/chroots/openstack/sys/</span>
-<span class="co2"># chroot ~/chroots/openstack</span></pre></div>
+<span class="co2"># chroot ~/chroots/openstack</span></pre></div></div>
 <p>When you want to exit
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><pre class="de1">openstack<span class="co2">#:exit</span></pre></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1">openstack<span class="co2">#:exit</span></pre></div></div>
 <p>Perhaps a good idea to verify no running chroot processes
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><pre class="de1"><span class="co2"># umount /home/&lt;username&gt;/chroots/openstack/proc/</span>
-<span class="co2"># umount /home/&lt;username&gt;/chroots/openstack/sys/</span></pre> </div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2"># umount /home/&lt;username&gt;/chroots/openstack/proc/</span>
+<span class="co2"># umount /home/&lt;username&gt;/chroots/openstack/sys/</span></pre></div></div>
 <h4> <span class="mw-headline" id="systemd-nspawn"> systemd-nspawn </span></h4>
 <p>(Recommended!)
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"> <pre class="de1">systemd<span class="sy2">-</span>nspawn <span class="sy2">-</span>D <span class="sy2">/</span>home<span class="sy2">/</span><span class="sy1">&lt;</span>username<span class="sy1">&gt;</span><span class="sy2">/</span>chroots<span class="sy2">/</span>openstack</pre></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1">systemd<span class="sy2">-</span>nspawn <span class="sy2">-</span>D <span class="sy2">/</span>home<span class="sy2">/</span><span class="sy1">&lt;</span>username<span class="sy1">&gt;</span><span class="sy2">/</span>chroots<span class="sy2">/</span>openstack</pre></div></div>
 <p>When you want to exit
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"> <pre class="de1">openstack<span class="co2">#: exit</span></pre> </div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1">openstack<span class="co2">#: exit</span></pre></div></div>
 <h4> <span class="mw-headline" id="lxc"> lxc </span></h4>
 <p>- Not covered in this Guide
 </p>
 <h3> <span class="mw-headline" id="3._Basic_recommended_modiifications"> 3. Basic recommended modiifications </span></h3>
 <p>You'll want to install and regularly update your new file system, right? So add the Oss and Update repositories. Although you can do this from "outside" the chroot, let's do this from within to also test how zypper is running in the chroot
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"> <pre class="de1">openstack<span class="sy4">:</span>~<span class="co2"># zypper ar http://download.opensuse.org/distribution/12.3/repo/oss/ openSUSE-12.3-Oss</span>
-openstack<span class="sy4">:</span>~<span class="co2"># zypper ar http://download.opensuse.org/update/12.3/ openSUSE-12.3-Update</span></pre> </div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1">openstack<span class="sy4">:</span>~<span class="co2"># zypper ar http://download.opensuse.org/distribution/12.3/repo/oss/ openSUSE-12.3-Oss</span>
+openstack<span class="sy4">:</span>~<span class="co2"># zypper ar http://download.opensuse.org/update/12.3/ openSUSE-12.3-Update</span></pre></div></div>
 <p>Verify your repo list
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"> <pre class="de1">openstack<span class="sy4">:</span>~<span class="co2"># zypper lr</span></pre> </div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1">openstack<span class="sy4">:</span>~<span class="co2"># zypper lr</span></pre></div></div>
 <p>Test your repos by updating all the packages in your new system 
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"> <pre class="de1">openstack<span class="sy4">:</span>~<span class="co2"># zypper ref</span>
-openstack<span class="sy4">:</span>~<span class="co2"># zypper up</span></pre> </div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1">openstack<span class="sy4">:</span>~<span class="co2"># zypper ref</span>
+openstack<span class="sy4">:</span>~<span class="co2"># zypper up</span></pre></div></div>
 <h3> <span class="mw-headline" id="4._Preserve_your_template.2C_work_on_a_Copy"> 4. Preserve your template, work on a Copy</span></h3>
 <p>When you are satisfied with your base system(install any additional packages you may want), copy it so you now have a new working directory.
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"> <pre class="de1"><span class="co2"># cp -r /home/&lt;username&gt;/chroots/base /home/&lt;username&gt;/chroots/openstack</span></pre> </div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2"># cp -r /home/&lt;username&gt;/chroots/base /home/&lt;username&gt;/chroots/openstack</span></pre></div></div>
 <h3> <span class="mw-headline" id="5._Setting_up_OpenStack_on_12.3"> 5. Setting up OpenStack on 12.3 </span></h3>
 <p>Currently Folsom is the approved stable release for openSUSE 12.3. If you're runnining on 12.2, Essex is the approved OpenStack release and you likely had to chroot because systemd-nspawn wasn't/isn't available.
 </p><p>Curiously, although running zypper from within the chroot works to install many packages, installing the OpenStack packages failed. So, I installed Folsom from the Host (outside the chroot).
 </p><p>Assuming you're now logged into your OpenStack (you should see openstack at the console prompt instead of your usual Host directory location), open a second console on the Host
 </p><p>First, although you won't be able to install new packages into the chroot from within you'll still want the repo installed for updating
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"> <pre class="de1">openstack<span class="sy4">:</span>~<span class="co2"># zypper ar http://download.opensuse.org/repositories/Cloud:/OpenStack:/Folsom/openSUSE_12.3/ Cloud_OpenStack_Folsom</span></pre> </div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1">openstack<span class="sy4">:</span>~<span class="co2"># zypper ar http://download.opensuse.org/repositories/Cloud:/OpenStack:/Folsom/openSUSE_12.3/ Cloud_OpenStack_Folsom</span></pre></div></div>
 <p>From your Host console,
 Add the Folsom repository
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"> <pre class="de1"><span class="co2"># zypper ar http://download.opensuse.org/repositories/Cloud:/OpenStack:/Folsom/openSUSE_12.3/ Cloud_OpenStack_Folsom</span></pre> </div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2"># zypper ar http://download.opensuse.org/repositories/Cloud:/OpenStack:/Folsom/openSUSE_12.3/ Cloud_OpenStack_Folsom</span></pre></div></div>
 <p>Refresh your local package database including the repo you just added
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"> <pre class="de1"><span class="co2"># zypper ref</span></pre> </div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2"># zypper ref</span></pre></div></div>
 <p>Let's see what new OpenStack packages are now available,
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"> <pre class="de1"><span class="co2"># zypper se openstack</span></pre> </div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2"># zypper se openstack</span></pre></div></div>
 <p>As you will see the OpenStack "patterns" isn't invoked the usual way with the "-t pattern" flag, it's implemented as a regular package. So, the following will download and install the recommended packages to deploy entirely on a single node, complete with the Quickstart script. But there's a gotcha! I found that libvirt and various other packages wouldn't install properly from within the chroot, So, the solution is to install from outside the chroot.
 </p><p>Open a new console on the Host (You don't have to close the chroot console, you can run both side by side).
 From the Host console,
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"> <pre class="de1"><span class="co2"># zypper --root  /home/&lt;username&gt;/chroots/openstack/ in patterns-openstack-controller patterns-openstack-compute-node openstack-quickstart</span></pre> </div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2"># zypper --root  /home/&lt;username&gt;/chroots/openstack/ in patterns-openstack-controller patterns-openstack-compute-node openstack-quickstart</span></pre></div></div>
 <p>Now, from within the chroot console you can verify the new installed packages
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"> <pre class="de1">openstack<span class="co2">#:~# zypper se openstack</span></pre> </div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1">openstack<span class="co2">#:~# zypper se openstack</span></pre></div></div>
 <p>And run the demosetup script to complete the Test setup
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"> <pre class="de1">openstack<span class="co2">#:~# /usr/sbin/openstack-quickstart-demosetup</span></pre> </div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1">openstack<span class="co2">#:~# /usr/sbin/openstack-quickstart-demosetup</span></pre></div></div>
 <p>Play on!
 </p>
 <h4> <span class="mw-headline" id="Additional_Notes:"> Additional Notes: </span></h4>
@@ -402,7 +402,7 @@ Retrieved from "<a href="chroot-nspawn-OpenStack.html">https://en.opensuse.org/U
                                 <li><a href="chroot-nspawn-OpenStack.html" class="selected" title="View the user page [c]" accesskey="c">User page</a></li><li><a href="https://en.opensuse.org/index.php?title=User_talk:Tsu2/chroot-nspawn-OpenStack&amp;action=edit&amp;redlink=1" class="new" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li><li><a href="https://en.opensuse.org/index.php?title=User:Tsu2/chroot-nspawn-OpenStack&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li><a href="https://en.opensuse.org/index.php?title=User:Tsu2/chroot-nspawn-OpenStack&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>                    </ul>
                 </div>
 
-             </div>
+            </div></div>
 
         <!-- Note: this clears floating, set in previous elements -->
         <div class="clear"></div>
